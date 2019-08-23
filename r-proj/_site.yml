@@ -1,0 +1,7 @@
+name: "nfl-analysis"
+output_dir: ../docs
+navbar:
+  title: "NFL Analytics"
+  left:
+    - text: "Home"
+      href: index.html

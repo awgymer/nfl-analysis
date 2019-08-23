@@ -1,0 +1,9 @@
+---
+title: "NFL Analytics by AWGymer"
+---
+
+This is my R-Markdown based website where I host short reports I create using NFL data, mainly from nflscrapR and Pro Football Reference.
+
+#### Analyses
+
+1. [Clutch QBs](clutch_qbs.html)

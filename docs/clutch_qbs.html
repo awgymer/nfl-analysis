@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Who is the clutchest of them all?</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">NFL Analytics</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Who is the clutchest of them all?</h1>
+
+</div>
+
+
+<div id="all-data-from-nflscrapr" class="section level5">
+<h5>All data from <a href="https://github.com/maksimhorowitz/nflscrapR">nflscrapR</a></h5>
+<p><br> <br></p>
+<p>The 2019 season is almost upon us, but this analysis is based on one of those questions you spend half the offseason arguing over in a group-chat because there is no real football to be had (RIP the AAF). Which QB is the most “clutch”?</p>
+</div>
+<div id="what-is-clutch" class="section level3">
+<h3>What is “clutch”?</h3>
+<p><strong>Clutch</strong>. The term is used a lot, but what does it really mean? Is it at all quantifiable? Or is it something altogether more intangible, something <em>je ne sais quoi</em>, an <em>“I know it when I see it”</em>?</p>
+<p>A couple of descriptions gathered from friends:</p>
+<blockquote>
+<p>Who do you want leading your drive with 2 minutes on the clock in the Superbowl down 5</p>
+</blockquote>
+<blockquote>
+<p>Makes big plays in big moments, not just the winning moments but keeping you in the game</p>
+</blockquote>
+<p>There is a fairly obvious caveat that comes with these notions of ‘clutchness’. If you are that good then you are unlikely to find yourself trailing, or even only narrowly leading, late in the game. Essentially, is being clutch only important if you aren’t that good to start with? Or if you are really good, and still in a close game, it could be because you are up against a particularly good defence.</p>
+<p>On that basis perhaps it’s a fool’s errand to try and quantify it, but where’s the fun in that.</p>
+<p>With all this in mind I decided to define it as performance in the fourth quarter when the game was in the balance. I defined a game as ‘in the balance’ using the following rules: * Up by 8 or less * Down by 24 or less with more than 10 minutes remaining * Down by 16 or less with more than 5 minutes remaining * Down by 8 or less</p>
+<p>This is far from perfect, but this is a fun exercise so it will do.</p>
+</div>
+<div id="the-regular-season" class="section level3">
+<h3>The Regular Season</h3>
+<pre class="r"><code># Get the play-by-play data
+reg_pbp &lt;- fread(&#39;../data/2009_2018_reg_pbp_all.csv&#39;)
+reg_pbp &lt;- filt_run_pass(reg_pbp)
+
+#Filter to Q4 play in close situations
+q4_qb &lt;- reg_pbp[
+  qtr==4 &amp; pass==1 &amp; !is.na(passer_player_name) &amp; 
+    passer_player_name != &#39;&#39; &amp;
+    score_differential &lt;= 8 &amp;
+    ((score_differential &gt;= -24 &amp; game_seconds_remaining &gt; 600) |
+     (score_differential &gt;= -16 &amp; game_seconds_remaining &gt; 300) |
+     (score_differential &gt;= -8 &amp; game_seconds_remaining &gt; 0))
+]
+
+#Create a summary 
+q4_qb_summ &lt;- q4_qb[,
+  .(plays=.N, 
+    mean_wpa=mean(wpa, na.rm=T),
+    mean_epa=mean(epa)
+  ), 
+  by=.(ahead=score_differential &gt; 0, passer_player_name)
+]
+
+## Mark the QBs which are above the 75 Att threshold in both trailing/leading
+q4_qb_summ[plays &gt; 75, threshold := .N, by=passer_player_name]
+
+melted_qb_summ &lt;- melt(
+  q4_qb_summ[threshold == 2], 
+  id.vars = c(&#39;passer_player_name&#39;, &#39;ahead&#39;, &#39;plays&#39;), 
+  measure.vars = c(&#39;mean_epa&#39;, &#39;mean_wpa&#39;), 
+  variable.name = &#39;stat&#39;, value.name = &#39;val&#39;
+)</code></pre>
+<p>Using the nflscrapR data from 2009 - 2018 in the regular season we find that there are 20653 plays from 29. I want to look for QBs who embody clutch, rather than just find QBs who had one miracle game so this is limited to quarterbacks who attempted at least 75 dropbacks whilst both chasing (<code>score_differential &lt;= 0</code>) and leading (<code>score_differential &gt; 0</code>) the game.</p>
+<pre class="r"><code>behind_q4 &lt;- ggplot(melted_qb_summ[ahead == F], aes(x=plays, y=val)) + 
+  geom_point(alpha = 0.8) + 
+  geom_text_repel(aes(label=passer_player_name)) + 
+  facet_wrap(~stat, scales=&#39;free_y&#39;, 
+             labeller=as_labeller(c(&#39;mean_epa&#39; = &#39;EPA/Dropback&#39;, &#39;mean_wpa&#39; = &#39;WPA/Dropback&#39;)),
+             strip.position = &#39;left&#39;) +
+  labs(
+    title = &#39;QB EPA and WPA Chasing the Game in Q4&#39;,
+    subtitle = &#39;Score Differential &lt;= 0 / Min 75 Dropbacks&#39;,
+    x = &#39;Dropbacks&#39;, y = NULL
+  ) +
+  theme_nfl() +
+  theme(strip.background = element_blank(), 
+        strip.text = element_text(colour=&#39;black&#39;),
+        strip.placement = &#39;outside&#39;)
+
+ahead_q4 &lt;- ggplot(melted_qb_summ[ahead == T], aes(x=plays, y=val)) + 
+  geom_point(alpha=0.8) + 
+  geom_text_repel(aes(label=passer_player_name)) + 
+  facet_wrap(~stat, scales=&#39;free_y&#39;, 
+             labeller = as_labeller(c(&#39;mean_epa&#39; = &#39;EPA/Dropback&#39;, &#39;mean_wpa&#39; = &#39;WPA/Dropback&#39;)),
+             strip.position = &#39;left&#39;) +
+  labs(
+    title = &#39;QB EPA and WPA Closing Out the Game in Q4&#39;,
+    subtitle = &#39;Score Differential &gt; 0 / Min 75 Dropbacks&#39;,
+    x = &#39;Dropbacks&#39;, y = NULL
+  ) +
+  theme_nfl() + 
+  theme(strip.background = element_blank(), 
+        strip.text = element_text(colour=&#39;black&#39;),
+        strip.placement = &#39;outside&#39;)</code></pre>
+<p>Whilst EPA is a reasonable measure of play success it would be a fair argument that when trying to win a game at the death simply adding more points does not tell the whole story; is a pass to set up a go-ahead field goal as time expires less valuable than a pass for a touchdown when trailing by 2 points late? To countenance this we can look at both EPA (expected points added) and WPA (win probability added).</p>
+<p>First up let’s look at how the QBs perform when chasing the game.</p>
+<p><img src="clutch_qbs_files/figure-html/chasing-plot-1.png" width="1152" /></p>
+<p>Looking at the QBs towards the top of both graphs we see names associated with good QB play: Brees, P.Manning, Brady, Wilson, Roethlisberger, Rodgers.</p>
+<p>Tony Romo might not be a name that springs to mind for everyone when they hear “clutch”, so let’s take a look at his numbers a little more closely.</p>
+<pre class="r"><code>## Look at the Tony Romo plays
+rom_plays &lt;- q4_qb[
+  passer_player_name == &#39;T.Romo&#39; &amp; score_differential &lt;= 0, 
+  .(season, week, desc, epa, wpa, winner)][order(-wpa)][0:10]
+kable(
+  rom_plays,
+  format = &#39;html&#39;,
+  col.names = c(&#39;Season&#39;, &#39;Week&#39;, &#39;Play&#39;, &#39;EPA&#39;, &#39;WPA&#39;, &#39;Winner&#39;)
+) %&gt;% 
+kable_styling(bootstrap_options = &#39;striped&#39;) %&gt;%
+  row_spec(which(rom_plays[,winner] != &#39;DAL&#39;), background = &#39;#f46d6d&#39;, color = &#39;white&#39;)</code></pre>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Season
+</th>
+<th style="text-align:right;">
+Week
+</th>
+<th style="text-align:left;">
+Play
+</th>
+<th style="text-align:right;">
+EPA
+</th>
+<th style="text-align:right;">
+WPA
+</th>
+<th style="text-align:left;">
+Winner
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+2015
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+(:13) (Shotgun) T.Romo Aborted. T.Frederick FUMBLES at NYG 16, recovered by DAL-T.Romo at NYG 16. T.Romo pass short middle to J.Witten for 11 yards, TOUCHDOWN.
+</td>
+<td style="text-align:right;">
+4.123232
+</td>
+<td style="text-align:right;">
+0.9389288
+</td>
+<td style="text-align:left;">
+DAL
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2012
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+16
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(:21) (Shotgun) T.Romo pass deep right to M.Austin for 19 yards, TOUCHDOWN. Pass caught 4 yards deep corner of the end zone.
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+5.116401
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.4842423
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2013
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+(1:16) (Shotgun) T.Romo pass short right to D.Murray for 10 yards, TOUCHDOWN. Penalty on DAL-D.Murray, Personal Foul, offsetting. Penalty on WAS-B.Meriweather, Personal Foul, offsetting.
+</td>
+<td style="text-align:right;">
+4.394467
+</td>
+<td style="text-align:right;">
+0.4761080
+</td>
+<td style="text-align:left;">
+DAL
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2013
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+(:42) (Shotgun) T.Romo pass short middle to D.Harris for 7 yards, TOUCHDOWN. Pass complete on a slant pattern.
+</td>
+<td style="text-align:right;">
+3.086983
+</td>
+<td style="text-align:right;">
+0.4405593
+</td>
+<td style="text-align:left;">
+DAL
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2014
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+(1:11) (Shotgun) T.Romo pass short left to D.Bryant for 13 yards, TOUCHDOWN. The Replay Official challenged the pass completion ruling, and the play was Upheld. The ruling on the field stands.
+</td>
+<td style="text-align:right;">
+3.558211
+</td>
+<td style="text-align:right;">
+0.4018501
+</td>
+<td style="text-align:left;">
+DAL
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2012
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+(:29) (Shotgun) T.Romo pass incomplete deep left to D.Harris. DAL-D.Harris was injured during the play. His return is Probable. PENALTY on CLE-S.Brown, Defensive Pass Interference, 35 yards, enforced at CLE 49 - No Play.
+</td>
+<td style="text-align:right;">
+1.527170
+</td>
+<td style="text-align:right;">
+0.3943005
+</td>
+<td style="text-align:left;">
+DAL
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+(2:27) (Shotgun) T.Romo pass short right to M.Austin for 59 yards, TOUCHDOWN.
+</td>
+<td style="text-align:right;">
+6.192000
+</td>
+<td style="text-align:right;">
+0.3453447
+</td>
+<td style="text-align:left;">
+DAL
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2013
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+5
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(8:27) (Shotgun) T.Romo pass deep left to D.Bryant to DEN 4 for 79 yards (O.Bolden) [M.Jackson]. DEN-O.Bolden was injured during the play. His return is Questionable.
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+6.548494
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.2876318
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+DEN
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+(2:20) (Shotgun) T.Romo pass deep middle to D.Bryant to WAS 40 for 30 yards (D.Hall). PENALTY on WAS-D.Hall, Face Mask (15 Yards), 15 yards, enforced at WAS 40. Pass complete on middle post.
+</td>
+<td style="text-align:right;">
+3.641882
+</td>
+<td style="text-align:right;">
+0.2829584
+</td>
+<td style="text-align:left;">
+DAL
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+(9:01) (Shotgun) T.Romo pass deep middle to J.Witten for 59 yards, TOUCHDOWN.
+</td>
+<td style="text-align:right;">
+6.080111
+</td>
+<td style="text-align:right;">
+0.2531229
+</td>
+<td style="text-align:left;">
+DAL
+</td>
+</tr>
+</tbody>
+</table>
+<p>When Romo was dialed in down late he accounted for some big swings in his team’s chances of winning, and ultimately won 8 of the 10 games where he had his biggest impact.</p>
+<p>Here’s that top play with a ridiculous WPA of <code>0.98</code>:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zjA5EYX3cb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p><br> Sadly Romo suffered a broken collarbone in the next game against the Eagles and the Cowboys slumped to a 4-12 record without his steady hand on the tiller. <br></p>
+Unfortunately not everyone’s reputation fairs quite so well … <br>
+<figure style="text-align: center; margin: auto;">
+<img src="images/stafford_comeback_meme.jpg" alt="Stafford Meme" style="height: 250px;"/>
+<figcaption>
+He might have a meme-level clutch rep but for Matt Stafford the data does not look quite so great.
+</figcaption>
+</figure>
+<p><br></p>
+<p>Eli Manning and Philip Rivers also look to be less than stellar when trailing late, possessing WPA stats similar to Andy Dalton and Matt Schaub.</p>
+<p>However it’s Chad Henne and Mark Sanchez who really have their failures highlighted in these graphs, both reducing their team’s winning chances by around <code>0.2%</code> with every dropback across more than 300 attempts.</p>
+<p>So we know who can turn it on when the chips are down, but do the same QBs possess icy veins when they have the chance to put the game out of sight?</p>
+<p><img src="clutch_qbs_files/figure-html/close-out-plot-1.png" width="1152" /></p>
+<p>Tony Romo has seen his stock drop considerably, returning the 2nd worst WPA/dropback of any QB when trying to close out the game. Perhaps there is some merit to accusations that he and the Cowboys choked at times.</p>
+<p>Eli Manning and Big Ben look to be somewhat lacking when it comes to killing off the game, both underperforming against the likes of Fitzmagic, Mark Sanchez, and Andy Dalton. It is possible of course that their tight games were always against strong opposition, but there are no such excuses needed for the elite duo of Brees and Brady who both boast high WPA/dropback.</p>
+<p>Drew Brees is notable because when looking at EPA he languishes some way behind fellow franchise QBs Rodgers and Brady, but he is much closer in WPA. This could be explained by the fact that when holding a lead, adding points isn’t necessarily the only way to ensure a win; eating up the clock with completions in-field and continuing to move the sticks is just as important, starving the opposition of the opportunity to close the gap. This may also help to explain why Sam Bradford and Kyle Orton appear so much more successful closing out games than chasing them; they are rewarded simply for not making mistakes as much as for <em>good</em> play.</p>
+<p>As well as adding more expected points than anyone else it is Russell Wilson who once again sits at the top of the WPA table. So is he the “clutchest” QB of all, at least in the regular season?</p>
+<p>What if he is actually very boom-bust; his title won on the basis of a couple of outlier plays? Or perhaps someone who looks poor has actually just been dragged down by a couple of unfortunate interceptions.</p>
+<pre class="r"><code>bplot_behind &lt;- ggplot(
+  q4_qb[
+    passer_player_name %in% unique(q4_qb_summ[threshold==2, passer_player_name]) &amp;
+      score_differential &lt;= 0,], 
+  aes(x=reorder(passer_player_name, wpa, mean, na.rm = T), y = wpa)
+) + 
+  geom_boxplot(outlier.alpha = 0.6) + 
+  geom_hline(aes(yintercept = mean(wpa, na.rm = T)), linetype = 2, colour = &#39;red&#39;) +
+  labs(
+    title = &quot;WPA of Passes When Chasing the Game in Q4&quot;,
+    subtitle = &quot;Min 75 Att / Red line is mean WPA of all featured QBs / QBs ordered by mean WPA low to high&quot;, 
+    y = &#39;WPA&#39;, x = NULL
+  ) +
+  theme_nfl() +
+  x_axis_angled(35)
+
+bplot_ahead &lt;- ggplot(
+  q4_qb[
+    passer_player_name %in% unique(q4_qb_summ[threshold==2, passer_player_name]) &amp;
+      score_differential &gt; 0,], 
+  aes(x=reorder(passer_player_name, wpa, mean, na.rm = T), y = wpa)
+) + 
+  geom_boxplot(outlier.alpha = 0.6) + 
+  geom_hline(aes(yintercept = mean(wpa, na.rm = T)), linetype = 2, colour = &#39;red&#39;) +
+  labs(
+    title = &quot;WPA of Passes When Closing Out the Game in Q4&quot;,
+    subtitle = &quot;Min 75 Att / Red line is mean WPA of all featured QBs / QBs ordered by mean WPA low to high&quot;, 
+    y = &#39;WPA&#39;, x = NULL
+  ) +
+  theme_nfl() +
+  x_axis_angled(35)</code></pre>
+<p>When looking at the impact of outlier plays it makes most sense to focus on WPA. This is because it is much less stable than EPA, with extremes of over <code>±0.95</code> as seen with Tony Romo.</p>
+<p><img src="clutch_qbs_files/figure-html/chasing-bplot-1.png" width="1152" /></p>
+<p>Clearly every QB has a number of outliers when chasing the game. It does appear Russell Wilson has a few more positive outliers than some of the other leading QBs, with Andrew Luck and Tom Brady exhibiting the tightest spreads of WPA of any of the top 10. Ultimately though all the QBs featured have very similar median WPA and all share very similar spreads for their middle 50% of WPA (the white boxes in the plots) - suggesting that outliers probably do account for most of the variance in WPA/dropback.</p>
+<p><img src="clutch_qbs_files/figure-html/close-out-bplot-1.png" width="1152" /></p>
+<p>When closing out the game it seems the very best QBs distnguish themselves by keeping it tight and not making the mistakes which lead to the big losses in EPA. Here Russell Wilson’s average WPA per dropback seems much less likely to have been boosted by outliers, whilst some of the best QBs of the past decade, in Brady, Brees, and Rivers, seem to have made more plays that resulted in a significant drop in their team’s win probability.</p>
+<p>Both these plots confirm that Chad Henne really is not the man you want under center at crunch time, with the majority of his dropbacks both chasing and leading the game harming his side’s chances of winning.</p>
+<p><br> ### The Postseason</p>
+<pre class="r"><code># Get the play-by-play data
+post_pbp &lt;- fread(&#39;../data/2009_2018_post_pbp_all.csv&#39;)
+post_pbp &lt;- filt_run_pass(post_pbp)
+
+#Remove Pro Bowl games
+pro_bowl_teams &lt;- c(&quot;AFC&quot;, &quot;NFC&quot;, &quot;RIC&quot;, &quot;SAN&quot;, &quot;IRV&quot;, &quot;CRT&quot;, &quot;APR&quot;, &quot;NPR&quot;)
+post_pbp &lt;- post_pbp[!(posteam %in% pro_bowl_teams)]
+
+post_q4_qb &lt;- post_pbp[
+  qtr==4 &amp; pass==1 &amp; !is.na(passer_player_name) &amp; 
+    passer_player_name != &#39;&#39; &amp;
+    score_differential &lt;= 8 &amp;
+    ((score_differential &gt;= -24 &amp; game_seconds_remaining &gt; 600) |
+     (score_differential &gt;= -16 &amp; game_seconds_remaining &gt; 300) |
+     (score_differential &gt;= -8 &amp; game_seconds_remaining &gt; 0))
+  ]
+
+#Create a summary 
+post_q4_qb_summ &lt;- post_q4_qb[,
+  .(plays=.N, 
+    mean_wpa=mean(wpa, na.rm=T),
+    mean_epa=mean(epa)
+  ), 
+  by=.(ahead=score_differential &gt; 0, passer_player_name)
+]
+
+## Mark the QBs which are above the 10 Att threshold in both trailing/leading
+post_q4_qb_summ[plays &gt; 10, threshold := .N, by=passer_player_name]
+
+melted_qb_post_summ &lt;- melt(
+  post_q4_qb_summ[threshold == 2], 
+  id.vars = c(&#39;passer_player_name&#39;, &#39;ahead&#39;, &#39;plays&#39;), 
+  measure.vars = c(&#39;mean_epa&#39;, &#39;mean_wpa&#39;), 
+  variable.name = &#39;stat&#39;, value.name = &#39;val&#39;
+)</code></pre>
+<p>The postseason is where we should be where we are most likely to find good QBs in tight fourth-quarter games.<br />
+Using the nflscrapR data from 2009 - 2018 in the post season we find that there are 761 plays from 8 where QBs had at least 10 dropbacks both chasing and leading a game. Our sample sizes here are too small to really draw any solid conclusion, but why let that stop us.</p>
+<p>It should be noted that since the data only goes back to 2009 there are some notable occasions missing, not least the Eli Manning led Giants’ march down the field in Super Bowl XLII to sink the previously undefeated Patriots and big brother Peyton’s epic 06-07 season AFC Championship comeback against the Patriots.</p>
+<pre class="r"><code>post_behind_q4 &lt;- ggplot(melted_qb_post_summ[ahead == F], aes(x=plays, y=val)) + 
+  geom_point(alpha = 0.8) + 
+  geom_text_repel(aes(label=passer_player_name)) + 
+  facet_wrap(~stat, scales=&#39;free_y&#39;, 
+             labeller=as_labeller(c(&#39;mean_epa&#39; = &#39;EPA/Dropback&#39;, &#39;mean_wpa&#39; = &#39;WPA/Dropback&#39;)),
+             strip.position = &#39;left&#39;) +
+  labs(
+    title = &#39;QB EPA and WPA Chasing the Game in Q4&#39;,
+    subtitle = &#39;Score Differential &lt;= 0 / Min 10 Dropbacks&#39;,
+    x = &#39;Dropbacks&#39;, y = NULL
+  ) +
+  theme_nfl() +
+  theme(strip.background = element_blank(), 
+        strip.text = element_text(colour=&#39;black&#39;),
+        strip.placement = &#39;outside&#39;)
+
+post_ahead_q4 &lt;- ggplot(melted_qb_post_summ[ahead == T], aes(x=plays, y=val)) + 
+  geom_point(alpha=0.8) + 
+  geom_text_repel(aes(label=passer_player_name)) + 
+  facet_wrap(~stat, scales=&#39;free_y&#39;, 
+             labeller = as_labeller(c(&#39;mean_epa&#39; = &#39;EPA/Dropback&#39;, &#39;mean_wpa&#39; = &#39;WPA/Dropback&#39;)),
+             strip.position = &#39;left&#39;) +
+  labs(
+    title = &#39;QB EPA and WPA Closing Out the Game in Q4&#39;,
+    subtitle = &#39;Score Differential &gt; 0 / Min 10 Dropbacks&#39;,
+    x = &#39;Dropbacks&#39;, y = NULL
+  ) +
+  theme_nfl() + 
+  theme(strip.background = element_blank(), 
+        strip.text = element_text(colour=&#39;black&#39;),
+        strip.placement = &#39;outside&#39;)</code></pre>
+<p><img src="clutch_qbs_files/figure-html/post-chasing-plot-1.png" width="1152" /> As you might expect it’s good QBs that get to the biggest games most often and there is very little in the way of negative scores here. But chasing the game in the playoffs it’s Tom Brady, Aaron Rodgers, and Drew Brees who stand above the rest, adding more than <code>0.3</code> expected points with every dropback. Ben Roethlisberger and Peyton Manning both have more positive impact when we consider the win probability but it’s Drew Brees who separates himself from the pack when it comes to WPA and EPA combined.</p>
+<p>Looking at his top 10 plays by WPA though we find that it is not all so rosy for Drew, with losses in 5 of the 6 games where he contributed most to his team’s chances for victory.</p>
+<pre class="r"><code>## Look at the Drew Brees plays
+drew_plays &lt;- post_q4_qb[
+  passer_player_name == &#39;D.Brees&#39; &amp; score_differential &lt;= 0, 
+  .(season, week, desc, epa, wpa, winner)][order(-wpa)][0:10]
+kable(
+  drew_plays,
+  format = &#39;html&#39;,
+  col.names = c(&#39;Season&#39;, &#39;Week&#39;, &#39;Play&#39;, &#39;EPA&#39;, &#39;WPA&#39;, &#39;Winner&#39;)
+) %&gt;% 
+kable_styling(bootstrap_options = &#39;striped&#39;) %&gt;%
+  row_spec(which(drew_plays[,winner] != &#39;NO&#39;), background = &#39;#f46d6d&#39;, color = &#39;white&#39;)</code></pre>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Season
+</th>
+<th style="text-align:right;">
+Week
+</th>
+<th style="text-align:left;">
+Play
+</th>
+<th style="text-align:right;">
+EPA
+</th>
+<th style="text-align:right;">
+WPA
+</th>
+<th style="text-align:left;">
+Winner
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2011
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(1:48) (Shotgun) D.Brees pass deep middle to J.Graham for 66 yards, TOUCHDOWN. Caught at SF 42. 42-yds YAC
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+5.7357877
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.4960295
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+SF
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2017
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(:45) (Shotgun) D.Brees pass short left to W.Snead pushed ob at MIN 33 for 13 yards (M.Alexander).
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+1.7935312
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.3190187
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+MIN
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2011
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(4:11) (Shotgun) D.Brees pass short middle to D.Sproles for 44 yards, TOUCHDOWN. Caught at SF 37. 37-yds YAC
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+4.7125084
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.2603682
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+SF
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2018
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(2:07) (Shotgun) D.Brees pass deep right to T.Ginn to LA 13 for 43 yards (L.Joyner). Pass 42, YAC 1
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2.4033042
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.2144467
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+LA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2017
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(3:06) (Shotgun) D.Brees pass short right to A.Kamara for 14 yards, TOUCHDOWN.
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2.9433487
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.1891271
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+MIN
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2013
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(5:03) D.Brees pass deep left to R.Meachem to SEA 25 for 52 yards (K.Chancellor).
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+3.0692140
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.1104670
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+SEA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+(12:48) (Shotgun) D.Brees pass short right to R.Bush pushed ob at MIN 1 for 4 yards (T.Johnson). New Orleans challenged the runner broke the plane ruling, and the play was REVERSED. (Shotgun) D.Brees pass short right to R.Bush for 5 yards, TOUCHDOWN. Pass 4, YAC 1
+</td>
+<td style="text-align:right;">
+2.4742422
+</td>
+<td style="text-align:right;">
+0.0972102
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2010
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(12:36) (Shotgun) D.Brees pass short right to J.Jones pushed ob at SEA 23 for 33 yards (E.Thomas).
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2.3260731
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.0843784
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+SEA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2011
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(6:50) (Shotgun) D.Brees pass short right to D.Henderson to NO 35 for 13 yards (C.Culliver). Caught at NO 34. 1-yd YAC
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2.1365259
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.0810333
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+SF
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2017
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(1:25) (Shotgun) D.Brees pass short middle to J.Hill to NO 43 for 18 yards (A.Barr).
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.8914843
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.0795397
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+MIN
+</td>
+</tr>
+</tbody>
+</table>
+<p>However this does serve to demonstrate why measuring “clutchness” simply by game outcome is not fair on a QB, with 3 of Brees’ top 10 plays coming in the 2017 Divisional Round meeting with the Vikings, which ended with a miracle Stefon Diggs walk-off TD - something the Saints’ QB could do little about.</p>
+<p><img src="clutch_qbs_files/figure-html/post-close-out-plot-1.png" width="1152" /></p>
+<p>If closing out a playoff game is not necessarily the most typical idea of “clutch”, failing to do so is surely about as far from “clutch” as one can get. Of our 8 QBs, 7 have a positive average affect on both expected points and win probability. Since the team is ahead on the scoreboard, increasing win probability is probably a better measure of success, and here we find Drew Brees once again near the top, beaten only by Big Ben.</p>
+<p>Let’s see how Roethlisberger got top spot…</p>
+<pre class="r"><code>## Look at the Ben Roethlisberger plays
+bb_plays &lt;- post_q4_qb[
+  passer_player_name == &#39;B.Roethlisberger&#39; &amp; score_differential &gt; 0, 
+  .(season, week, desc, epa, wpa, winner)][order(-wpa)][0:5]
+kable(
+  bb_plays,
+  format = &#39;html&#39;,
+  col.names = c(&#39;Season&#39;, &#39;Week&#39;, &#39;Play&#39;, &#39;EPA&#39;, &#39;WPA&#39;, &#39;Winner&#39;)
+) %&gt;% 
+kable_styling(bootstrap_options = &#39;striped&#39;) %&gt;%
+  row_spec(which(bb_plays[,winner] != &#39;PIT&#39;), background = &#39;#f46d6d&#39;, color = &#39;white&#39;)</code></pre>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Season
+</th>
+<th style="text-align:right;">
+Week
+</th>
+<th style="text-align:left;">
+Play
+</th>
+<th style="text-align:right;">
+EPA
+</th>
+<th style="text-align:right;">
+WPA
+</th>
+<th style="text-align:left;">
+Winner
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+(2:07) (Shotgun) B.Roethlisberger pass deep right to A.Brown ran ob at BAL 4 for 58 yards. Penalty on BAL-H.Nakamura, Illegal Contact, declined.
+</td>
+<td style="text-align:right;">
+4.7910256
+</td>
+<td style="text-align:right;">
+0.2559504
+</td>
+<td style="text-align:left;">
+PIT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+(3:34) (Shotgun) B.Roethlisberger pass short right to H.Ward to PIT 47 for 12 yards (H.Nakamura, D.Ellerbe).
+</td>
+<td style="text-align:right;">
+1.7011121
+</td>
+<td style="text-align:right;">
+0.1177731
+</td>
+<td style="text-align:left;">
+PIT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2016
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+(2:00) (Shotgun) B.Roethlisberger pass short right to A.Brown ran ob at PIT 19 for 7 yards.
+</td>
+<td style="text-align:right;">
+0.3719779
+</td>
+<td style="text-align:right;">
+0.1111659
+</td>
+<td style="text-align:left;">
+PIT
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2015
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(11:33) (Shotgun) B.Roethlisberger pass short middle to J.James to PIT 47 for 22 yards (A.Talib). Penalty on DEN-B.Marshall, Illegal Contact, declined.
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+1.7409632
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.0714124
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+DEN
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2016
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+(15:00) (Shotgun) B.Roethlisberger pass short middle to E.Rogers to PIT 45 for 14 yards (R.Parker).
+</td>
+<td style="text-align:right;">
+1.7757802
+</td>
+<td style="text-align:right;">
+0.0670346
+</td>
+<td style="text-align:left;">
+PIT
+</td>
+</tr>
+</tbody>
+</table>
+<p>Two big 3rd down completions with the game tied in the 2010 Divisional Round matchup with the Ravens top the list, combining to increase Pittsburgh’s chance of victory by 35%.</p>
+<p>And what about our 1 QB who had negative EPA and WPA per dropback with his team in the lead, looking to kill off the game. That would be one T. Brady.</p>
+<p><img src="images/wat_meme.jpg" /></p>
+<p>Ok so what the hell is going on here?</p>
+<pre class="r"><code>## Look at the Brady plays
+tb12_plays &lt;- post_q4_qb[
+  passer_player_name == &#39;T.Brady&#39; &amp; score_differential &gt; 0, 
+  .(season, week, defteam, desc, epa, wpa, winner)][order(wpa)]
+kable(
+  tb12_plays,
+  format = &#39;html&#39;,
+  col.names = c(&#39;Season&#39;, &#39;Week&#39;, &#39;Opp&#39;, &#39;Play&#39;, &#39;EPA&#39;, &#39;WPA&#39;, &#39;Winner&#39;)
+) %&gt;% 
+kable_styling(bootstrap_options = &#39;striped&#39;) %&gt;%
+  row_spec(which(tb12_plays[,winner] != &#39;NE&#39;), background = &#39;#f46d6d&#39;, color = &#39;white&#39;)</code></pre>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Season
+</th>
+<th style="text-align:right;">
+Week
+</th>
+<th style="text-align:left;">
+Opp
+</th>
+<th style="text-align:left;">
+Play
+</th>
+<th style="text-align:right;">
+EPA
+</th>
+<th style="text-align:right;">
+WPA
+</th>
+<th style="text-align:left;">
+Winner
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+2018
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+KC
+</td>
+<td style="text-align:left;">
+(8:06) T.Brady pass deep left intended for J.Edelman INTERCEPTED by D.Sorensen at NE 47. D.Sorensen to NE 23 for 24 yards (S.Michel).
+</td>
+<td style="text-align:right;">
+-4.9977593
+</td>
+<td style="text-align:right;">
+-0.1753945
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+BAL
+</td>
+<td style="text-align:left;">
+(7:22) T.Brady pass deep middle intended for M.Slater INTERCEPTED by J.Smith (B.Pollard) at BAL -1. J.Smith ran ob at BAL 38 for 39 yards.
+</td>
+<td style="text-align:right;">
+-4.6259017
+</td>
+<td style="text-align:right;">
+-0.1693715
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2011
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(4:00) T.Brady pass incomplete deep middle to D.Branch (C.Webster).
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+-1.0378658
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+-0.0536312
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2016
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+HOU
+</td>
+<td style="text-align:left;">
+(13:10) (Shotgun) T.Brady pass incomplete short middle to J.Edelman.
+</td>
+<td style="text-align:right;">
+-1.5131948
+</td>
+<td style="text-align:right;">
+-0.0411324
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+BAL
+</td>
+<td style="text-align:left;">
+(1:56) (Shotgun) T.Brady pass incomplete short right to A.Hernandez (E.Reed).
+</td>
+<td style="text-align:right;">
+-0.7149785
+</td>
+<td style="text-align:right;">
+-0.0336880
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2011
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(4:06) (Shotgun) T.Brady pass incomplete deep left to W.Welker.
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+-0.6962450
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+-0.0333152
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2011
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(14:31) (No Huddle, Shotgun) T.Brady pass deep left intended for R.Gronkowski INTERCEPTED by C.Blackburn [J.Pierre-Paul] at NYG 8. C.Blackburn to NYG 8 for no gain (R.Gronkowski).
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+-2.0114788
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+-0.0264107
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2011
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(9:24) (Shotgun) T.Brady pass incomplete short middle to A.Hernandez [L.Joseph].
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+-0.6036993
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+-0.0240950
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2015
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+KC
+</td>
+<td style="text-align:left;">
+(14:53) (Shotgun) T.Brady pass incomplete short left to K.Martin.
+</td>
+<td style="text-align:right;">
+-0.9639722
+</td>
+<td style="text-align:right;">
+-0.0210908
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2015
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+KC
+</td>
+<td style="text-align:left;">
+(14:57) (Shotgun) T.Brady pass incomplete deep left to K.Martin.
+</td>
+<td style="text-align:right;">
+-0.7472452
+</td>
+<td style="text-align:right;">
+-0.0142310
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2016
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+HOU
+</td>
+<td style="text-align:left;">
+(13:59) (Shotgun) T.Brady pass incomplete deep right to J.Edelman [C.Covington].
+</td>
+<td style="text-align:right;">
+-0.5614569
+</td>
+<td style="text-align:right;">
+-0.0116284
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2016
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+HOU
+</td>
+<td style="text-align:left;">
+(13:50) (Shotgun) T.Brady pass short left to J.Edelman to HOU 45 for 3 yards (A.Bouye). NE 11-Edelman 76th career postseason reception, tied for 7th all-time (Thurman Thomas).
+</td>
+<td style="text-align:right;">
+-0.4733827
+</td>
+<td style="text-align:right;">
+-0.0086929
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2015
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+KC
+</td>
+<td style="text-align:left;">
+(1:08) (Shotgun) T.Brady pass short right to J.Edelman to KC 34 for 12 yards (M.Peters). pass bounced off NE 87-Gronkowski. NE 12-Brady 9th career 300-yard postseason game, ties Peyton Manning for most all-time. NE 11-Edelman 2nd career postseason 100-yard game.
+</td>
+<td style="text-align:right;">
+-1.7549489
+</td>
+<td style="text-align:right;">
+-0.0084603
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2015
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+KC
+</td>
+<td style="text-align:left;">
+(15:00) (Shotgun) T.Brady pass incomplete short right to B.LaFell (M.Peters).
+</td>
+<td style="text-align:right;">
+-0.4310223
+</td>
+<td style="text-align:right;">
+-0.0074676
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2018
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+KC
+</td>
+<td style="text-align:left;">
+(10:45) (Shotgun) T.Brady pass short right to J.White to KC 26 for 5 yards (K.Fuller; A.Hitchens).
+</td>
+<td style="text-align:right;">
+-0.0486175
+</td>
+<td style="text-align:right;">
+0.0026097
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2011
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(9:19) (Shotgun) T.Brady pass short right to W.Welker to NE 13 for 5 yards (J.Williams).
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.0065179
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.0029963
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2011
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(6:05) (Shotgun) T.Brady pass short right to R.Gronkowski to NYG 47 for 6 yards (P.Amukamara).
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.0859285
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.0149503
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2018
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+KC
+</td>
+<td style="text-align:left;">
+(12:11) T.Brady pass short left to J.Develin to KC 34 for 9 yards (R.Ragland).
+</td>
+<td style="text-align:right;">
+0.8245201
+</td>
+<td style="text-align:right;">
+0.0349239
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+BAL
+</td>
+<td style="text-align:left;">
+(2:46) (Shotgun) T.Brady pass short left to D.Branch to NE 40 for 7 yards (B.Pollard).
+</td>
+<td style="text-align:right;">
+0.2364675
+</td>
+<td style="text-align:right;">
+0.0508877
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2011
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(5:22) (Shotgun) T.Brady pass short left to A.Hernandez to NYG 43 for 4 yards (M.Boley).
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.8406425
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.0536063
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2018
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+KC
+</td>
+<td style="text-align:left;">
+(14:43) T.Brady pass short middle to J.Edelman to NE 43 for 19 yards (D.Sorensen).
+</td>
+<td style="text-align:right;">
+1.6015993
+</td>
+<td style="text-align:right;">
+0.0651957
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2016
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+HOU
+</td>
+<td style="text-align:left;">
+(14:18) (Shotgun) T.Brady pass short left to D.Lewis to NE 37 for 10 yards (B.McKinney) [C.Covington]. PENALTY on HOU-J.Clowney, Roughing the Passer, 15 yards, enforced at NE 37.
+</td>
+<td style="text-align:right;">
+2.5526560
+</td>
+<td style="text-align:right;">
+0.0658064
+</td>
+<td style="text-align:left;">
+NE
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2011
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+18
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+(8:35) (Shotgun) T.Brady pass short right to D.Woodhead to NE 32 for 19 yards (D.Grant).
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+2.4658297
+</td>
+<td style="text-align:right;color: white !important;background-color: #f46d6d !important;">
+0.1110196
+</td>
+<td style="text-align:left;color: white !important;background-color: #f46d6d !important;">
+NYG
+</td>
+</tr>
+</tbody>
+</table>
+<p>Of his 23 plays whilst leading by a score or less in the 4th, Brady has negative WPA and EPA on 14. His worst two plays are interceptions midway through the 4th against Kansas in 2018 and Baltimore in 2011, neither of which ultimately cost the Patriots the game.</p>
+<p>The 2011 Super Bowl against the New York Giants accounts for 8 of the 23 plays, and although Brady ended with a net WPA of <code>0.04</code> the Patriots ultimately lost the title game.</p>
+</div>
+<div id="conclusion" class="section level3">
+<h3>Conclusion</h3>
+<p>So after all that who comes out on top? Which QB stands out amongst the rest as the most clutch of the last decade?</p>
+<p>There’s a strong argument for Russell Wilson who boosted his team’s chances of winning by more than any other QB in the regular season. But he hasn’t been quite the same difference-maker come crunch time in knockout football. So perhaps Drew Brees, who was consistently near the top of every measure, across the regular season and the post season?</p>
+<p>Well I am sorry to inform you that this was a dumb exercise.</p>
+<p>Because the answer is Thomas Edward Patrick Brady Jr.</p>
+<p>The man with more Super Bowl rings than any other player, the man under center when the Patriots overturned a 25 point deficit on the biggest stage.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
