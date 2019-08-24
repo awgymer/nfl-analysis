@@ -13,6 +13,8 @@ library(kableExtra)
 source('../r-exts/nfl_themes.R')
 source('../r-exts/nflscrapr_extra.R')
 ```
+Last updated: `r Sys.time()`
+
 ##### All data from [nflscrapR](https://github.com/maksimhorowitz/nflscrapR)
 <br>
 <br>
@@ -89,7 +91,7 @@ behind_q4 <- ggplot(melted_qb_summ[ahead == F], aes(x=plays, y=val)) +
              labeller=as_labeller(c('mean_epa' = 'EPA/Dropback', 'mean_wpa' = 'WPA/Dropback')),
              strip.position = 'left') +
   labs(
-    title = 'QB EPA and WPA Chasing the Game in Q4',
+    title = 'QB EPA and WPA Chasing the Game in Q4: Regular Season 09-18',
     subtitle = 'Score Differential <= 0 / Min 75 Dropbacks',
     x = 'Dropbacks', y = NULL
   ) +
@@ -105,7 +107,7 @@ ahead_q4 <- ggplot(melted_qb_summ[ahead == T], aes(x=plays, y=val)) +
              labeller = as_labeller(c('mean_epa' = 'EPA/Dropback', 'mean_wpa' = 'WPA/Dropback')),
              strip.position = 'left') +
   labs(
-    title = 'QB EPA and WPA Closing Out the Game in Q4',
+    title = 'QB EPA and WPA Closing Out the Game in Q4: Regular Season 09-18',
     subtitle = 'Score Differential > 0 / Min 75 Dropbacks',
     x = 'Dropbacks', y = NULL
   ) +
@@ -115,7 +117,7 @@ ahead_q4 <- ggplot(melted_qb_summ[ahead == T], aes(x=plays, y=val)) +
         strip.placement = 'outside')
 ```
 
-Whilst EPA is a reasonable measure of play success it would be a fair argument that when trying to win a game at the death simply adding more points does not tell the whole story; is a pass to set up a go-ahead field goal as time expires less valuable than a pass for a touchdown when trailing by 2 points late? To countenance this we can look at both EPA (expected points added) and WPA (win probability added).
+Whilst EPA is a reasonable measure of play success it would be a fair argument that when trying to win a game at the death simply adding more points does not tell the whole story; is a pass to set up a go-ahead field goal as time expires less valuable than a pass for a touchdown when trailing by 2 points late? To countenance this we can look at both EPA (expected points added) and WPA (win probability added). It is also worth noting that this data cannot account directly for game script or playcalling. It might be a fair suggestion that some coordinators and coaches get too conservative when faced with a narrow lead in the 4th, causing a drop in EPA or WPA that is not entirely down to the QB play. 
 
 First up let's look at how the QBs perform when chasing the game.
 
@@ -188,7 +190,7 @@ bplot_behind <- ggplot(
   geom_boxplot(outlier.alpha = 0.6) + 
   geom_hline(aes(yintercept = mean(wpa, na.rm = T)), linetype = 2, colour = 'red') +
   labs(
-    title = "WPA of Passes When Chasing the Game in Q4",
+    title = "WPA of Passes When Chasing the Game in Q4: Regular Season 09-18",
     subtitle = "Min 75 Att / Red line is mean WPA of all featured QBs / QBs ordered by mean WPA low to high", 
     y = 'WPA', x = NULL
   ) +
@@ -204,7 +206,7 @@ bplot_ahead <- ggplot(
   geom_boxplot(outlier.alpha = 0.6) + 
   geom_hline(aes(yintercept = mean(wpa, na.rm = T)), linetype = 2, colour = 'red') +
   labs(
-    title = "WPA of Passes When Closing Out the Game in Q4",
+    title = "WPA of Passes When Closing Out the Game in Q4: Regular Season 09-18",
     subtitle = "Min 75 Att / Red line is mean WPA of all featured QBs / QBs ordered by mean WPA low to high", 
     y = 'WPA', x = NULL
   ) +
@@ -285,7 +287,7 @@ post_behind_q4 <- ggplot(melted_qb_post_summ[ahead == F], aes(x=plays, y=val)) +
              labeller=as_labeller(c('mean_epa' = 'EPA/Dropback', 'mean_wpa' = 'WPA/Dropback')),
              strip.position = 'left') +
   labs(
-    title = 'QB EPA and WPA Chasing the Game in Q4',
+    title = 'QB EPA and WPA Chasing the Game in Q4: Post Season 09-18',
     subtitle = 'Score Differential <= 0 / Min 10 Dropbacks',
     x = 'Dropbacks', y = NULL
   ) +
@@ -301,7 +303,7 @@ post_ahead_q4 <- ggplot(melted_qb_post_summ[ahead == T], aes(x=plays, y=val)) +
              labeller = as_labeller(c('mean_epa' = 'EPA/Dropback', 'mean_wpa' = 'WPA/Dropback')),
              strip.position = 'left') +
   labs(
-    title = 'QB EPA and WPA Closing Out the Game in Q4',
+    title = 'QB EPA and WPA Closing Out the Game in Q4: Post Season 09-18',
     subtitle = 'Score Differential > 0 / Min 10 Dropbacks',
     x = 'Dropbacks', y = NULL
   ) +

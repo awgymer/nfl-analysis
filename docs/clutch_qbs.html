@@ -305,6 +305,7 @@ $(document).ready(function () {
 </div>
 
 
+<p>Last updated: 2019-08-24 10:21:27</p>
 <div id="all-data-from-nflscrapr" class="section level5">
 <h5>All data from <a href="https://github.com/maksimhorowitz/nflscrapR">nflscrapR</a></h5>
 <p><br> <br></p>
@@ -367,7 +368,7 @@ melted_qb_summ &lt;- melt(
              labeller=as_labeller(c(&#39;mean_epa&#39; = &#39;EPA/Dropback&#39;, &#39;mean_wpa&#39; = &#39;WPA/Dropback&#39;)),
              strip.position = &#39;left&#39;) +
   labs(
-    title = &#39;QB EPA and WPA Chasing the Game in Q4&#39;,
+    title = &#39;QB EPA and WPA Chasing the Game in Q4: Regular Season 09-18&#39;,
     subtitle = &#39;Score Differential &lt;= 0 / Min 75 Dropbacks&#39;,
     x = &#39;Dropbacks&#39;, y = NULL
   ) +
@@ -383,7 +384,7 @@ ahead_q4 &lt;- ggplot(melted_qb_summ[ahead == T], aes(x=plays, y=val)) +
              labeller = as_labeller(c(&#39;mean_epa&#39; = &#39;EPA/Dropback&#39;, &#39;mean_wpa&#39; = &#39;WPA/Dropback&#39;)),
              strip.position = &#39;left&#39;) +
   labs(
-    title = &#39;QB EPA and WPA Closing Out the Game in Q4&#39;,
+    title = &#39;QB EPA and WPA Closing Out the Game in Q4: Regular Season 09-18&#39;,
     subtitle = &#39;Score Differential &gt; 0 / Min 75 Dropbacks&#39;,
     x = &#39;Dropbacks&#39;, y = NULL
   ) +
@@ -391,7 +392,7 @@ ahead_q4 &lt;- ggplot(melted_qb_summ[ahead == T], aes(x=plays, y=val)) +
   theme(strip.background = element_blank(), 
         strip.text = element_text(colour=&#39;black&#39;),
         strip.placement = &#39;outside&#39;)</code></pre>
-<p>Whilst EPA is a reasonable measure of play success it would be a fair argument that when trying to win a game at the death simply adding more points does not tell the whole story; is a pass to set up a go-ahead field goal as time expires less valuable than a pass for a touchdown when trailing by 2 points late? To countenance this we can look at both EPA (expected points added) and WPA (win probability added).</p>
+<p>Whilst EPA is a reasonable measure of play success it would be a fair argument that when trying to win a game at the death simply adding more points does not tell the whole story; is a pass to set up a go-ahead field goal as time expires less valuable than a pass for a touchdown when trailing by 2 points late? To countenance this we can look at both EPA (expected points added) and WPA (win probability added). It is also worth noting that this data cannot account directly for game script or playcalling. It might be a fair suggestion that some coordinators and coaches get too conservative when faced with a narrow lead in the 4th, causing a drop in EPA or WPA that is not entirely down to the QB play.</p>
 <p>First up let’s look at how the QBs perform when chasing the game.</p>
 <p><img src="clutch_qbs_files/figure-html/chasing-plot-1.png" width="1152" /></p>
 <p>Looking at the QBs towards the top of both graphs we see names associated with good QB play: Brees, P.Manning, Brady, Wilson, Roethlisberger, Rodgers.</p>
@@ -664,7 +665,7 @@ He might have a meme-level clutch rep but for Matt Stafford the data does not lo
   geom_boxplot(outlier.alpha = 0.6) + 
   geom_hline(aes(yintercept = mean(wpa, na.rm = T)), linetype = 2, colour = &#39;red&#39;) +
   labs(
-    title = &quot;WPA of Passes When Chasing the Game in Q4&quot;,
+    title = &quot;WPA of Passes When Chasing the Game in Q4: Regular Season 09-18&quot;,
     subtitle = &quot;Min 75 Att / Red line is mean WPA of all featured QBs / QBs ordered by mean WPA low to high&quot;, 
     y = &#39;WPA&#39;, x = NULL
   ) +
@@ -680,7 +681,7 @@ bplot_ahead &lt;- ggplot(
   geom_boxplot(outlier.alpha = 0.6) + 
   geom_hline(aes(yintercept = mean(wpa, na.rm = T)), linetype = 2, colour = &#39;red&#39;) +
   labs(
-    title = &quot;WPA of Passes When Closing Out the Game in Q4&quot;,
+    title = &quot;WPA of Passes When Closing Out the Game in Q4: Regular Season 09-18&quot;,
     subtitle = &quot;Min 75 Att / Red line is mean WPA of all featured QBs / QBs ordered by mean WPA low to high&quot;, 
     y = &#39;WPA&#39;, x = NULL
   ) +
@@ -738,7 +739,7 @@ Using the nflscrapR data from 2009 - 2018 in the post season we find that there 
              labeller=as_labeller(c(&#39;mean_epa&#39; = &#39;EPA/Dropback&#39;, &#39;mean_wpa&#39; = &#39;WPA/Dropback&#39;)),
              strip.position = &#39;left&#39;) +
   labs(
-    title = &#39;QB EPA and WPA Chasing the Game in Q4&#39;,
+    title = &#39;QB EPA and WPA Chasing the Game in Q4: Post Season 09-18&#39;,
     subtitle = &#39;Score Differential &lt;= 0 / Min 10 Dropbacks&#39;,
     x = &#39;Dropbacks&#39;, y = NULL
   ) +
@@ -754,7 +755,7 @@ post_ahead_q4 &lt;- ggplot(melted_qb_post_summ[ahead == T], aes(x=plays, y=val))
              labeller = as_labeller(c(&#39;mean_epa&#39; = &#39;EPA/Dropback&#39;, &#39;mean_wpa&#39; = &#39;WPA/Dropback&#39;)),
              strip.position = &#39;left&#39;) +
   labs(
-    title = &#39;QB EPA and WPA Closing Out the Game in Q4&#39;,
+    title = &#39;QB EPA and WPA Closing Out the Game in Q4: Post Season 09-18&#39;,
     subtitle = &#39;Score Differential &gt; 0 / Min 10 Dropbacks&#39;,
     x = &#39;Dropbacks&#39;, y = NULL
   ) +
