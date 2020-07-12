@@ -1,0 +1,931 @@
+name,id,teams,grpid
+A.Allen,32013030-2d30-3032-3831-36336308f66a,BAL (2011-2012),ant-allen-rb
+A.Allen,32013030-2d30-3032-3835-3635b6007d86,CHI (2011-2012),armando-allen-rb
+A.Benn,00-0027654,TB (2010-2010),arrelious-benn
+A.Benn,32013030-2d30-3032-3736-3534e1a99468,TB (2011-2012),arrelious-benn
+A.Boldin,00-0022084,"ARI (2003-2009),BAL (2010-2010)",anquan-boldin
+A.Boldin,32013030-2d30-3032-3230-38343770790e,"BAL (2012-2012),SF (2013-2014)",anquan-boldin
+A.Bradshaw,00-0025637,NYG (2007-2010),ahmad-bradshaw
+A.Bradshaw,32013030-2d30-3032-3536-33375c8435f2,"IND (2013-2015),NYG (2011-2012)",ahmad-bradshaw
+A.Brown,00-0021425,"BUF (2003-2003),WAS (2005-2005)",ant-d-brown-wr
+A.Brown,00-0027094,DEN (2010-2010),andre-brown-wr
+A.Brown,32013030-2d30-3032-3730-3934551d8d0c,NYG (2012-2013),andre-brown-wr
+A.Brown,00-0027129,DET (2009-2010),aaron-brown-rb
+A.Brown,32013030-2d30-3032-3731-323975915d96,DET (2011-2011),aaron-brown-rb
+A.Brown,32013030-2d30-3032-3737-393324cab550,"NE (2019-2019),PIT (2011-2018)",antonio-brown-wr
+A.Brown,32013030-2d30-3033-3536-3736617676fa,TEN (2019-2019),aj-brown
+A.Caldwell,00-0026237,CIN (2008-2010),andre-caldwell-wr
+A.Caldwell,32013030-2d30-3032-3632-3337d0ecaeae,DEN (2012-2015),andre-caldwell-wr
+A.Davis,00-0021175,"CLE (2002-2004),NE (2005-2005)",andre-davis-wr
+A.Davis,32013030-2d30-3032-3839-35372ad9e22c,"CLE (2015-2015),LA (2014-2014),SEA (2017-2017)",austin-davis-qb
+A.Dixon,00-0027772,SF (2010-2010),ant-dixon-rb
+A.Dixon,32013030-2d30-3032-3737-37326a9eb7b1,"BUF (2014-2015),SF (2011-2013)",ant-dixon-rb
+A.Edwards,00-0027692,CAR (2010-2010),armanti-edwards-qb
+A.Edwards,32013030-2d30-3032-3736-39325eed10ba,"CAR (2011-2012),CLE (2013-2013)",armanti-edwards-qb
+A.Feeley,00-0020305,"MIA (2004-2004),PHI (2001-2007)",aj-feeley-qb
+A.Feeley,32013030-2d30-3032-3033-3035a2bdfac5,LA (2011-2011),aj-feeley-qb
+A.Foster,00-0026796,HOU (2009-2010),arian-foster-rb
+A.Foster,32013030-2d30-3032-3637-3936506d4e12,"HOU (2011-2015),MIA (2016-2016)",arian-foster-rb
+A.Green,00-0006305,"GB (2000-2009),HOU (2007-2008),SEA (1999-1999)",ahman-green-rb
+A.Green,32013030-2d30-3032-3739-3432de086283,CIN (2011-2014),aj-green-wr
+A.Green,32013030-2d30-3032-3830-3334e718860a,"GB (2011-2012),NYJ (2013-2013)",alex-green-rb
+A.Hall,00-0023764,DEN (2007-2008),andre-hall-rb
+A.Hall,00-0024489,TEN (2006-2010),ahmard-hall-rb
+A.Hall,32013030-2d30-3032-3434-38397cfe32a4,TEN (2011-2011),ahmard-hall-rb
+A.Harris,00-0021750,"DET (2006-2006),LA (2003-2005)",arlen-harris-rb
+A.Harris,32013030-2d30-3033-3138-33306a7efa61,GB (2015-2015),alonzo-harris-rb
+A.Hernandez,00-0027713,NE (2010-2010),aaron-hernandez-te
+A.Hernandez,32013030-2d30-3032-3737-31332ef5e9c2,NE (2011-2012),aaron-hernandez-te
+A.Johnson,00-0022044,HOU (2003-2010),andre-johnson-wr
+A.Johnson,32013030-2d30-3032-3230-343499436c0c,HOU (2011-2011),andre-johnson-wr
+A.Johnson,00-0008430,"CAR (1999-1999),JAX (2000-2000)",ant-johnson-rb
+A.Johnson,32013030-2d30-3032-3937-3239ecbc3217,NO (2014-2015),austin-johnson-fb
+A.Jones,32013030-2d30-3033-3332-3933ed82c0de,GB (2017-2019),aaron-jones-rb
+A.Jones,00-0023441,TEN (2005-2006),adam-jones-db
+A.Lee,00-0009738,"LA (1999-1999),PHI (2000-2000)",amp-lee-rb
+A.Lee,32013030-2d30-3032-3238-32349b479eae,"ARI (2019-2019),SF (2011-2014)",andy-lee-p
+A.Peterson,00-0021306,CHI (2002-2009),fake-adrian-peterson-rb
+A.Peterson,00-0025394,MIN (2007-2010),adrian-peterson-rb
+A.Peterson,32013030-2d30-3032-3533-3934ceb6c025,"ARI (2017-2017),MIN (2011-2016),NO (2017-2017),WAS (2018-2019)",adrian-peterson-rb
+A.Podlesh,00-0025488,JAX (2007-2007),adam-podlesh-p
+A.Podlesh,32013030-2d30-3032-3534-3838a0367332,CHI (2011-2012),adam-podlesh-p
+A.Robinson,32013030-2d30-3032-3831-3136ccfa779f,WAS (2012-2013),aldrick-robinson-wr
+A.Robinson,32013030-2d30-3033-3134-3238120ea790,CHI (2019-2019),allen-robinson-wr
+A.Rodgers,00-0023459,GB (2005-2010),aaron-rodgers-qb
+A.Rodgers,32013030-2d30-3032-3334-35395dc60da5,GB (2011-2019),aaron-rodgers-qb
+A.Smith,00-0015082,CIN (1999-2002),akili-smith-qb
+A.Smith,00-0015091,"BUF (1999-2000),NE (2001-2003),NO (2005-2005),TEN (2004-2004)",antowain-smith-rb
+A.Smith,00-0023436,SF (2005-2010),alex-smith-qb
+A.Smith,00-0026855,ATL (2010-2010),antone-smith-rb
+A.Smith,32013030-2d30-3032-3334-3336b638d37d,"KC (2013-2017),SF (2011-2012),WAS (2018-2018)",alex-smith-qb
+A.Smith,32013030-2d30-3032-3638-35357b8852e7,"ATL (2013-2014),CHI (2015-2015),TB (2016-2016)",antone-smith-rb
+A.Smith,32013030-2d30-3032-3733-3436badbf2c2,ARI (2011-2013),alfonso-smith-rb
+A.Smith,32013030-2d30-3032-3837-303690aa9ff9,CAR (2012-2013),armond-smith-rb
+A.Van Pelt,00-0016838,BUF (1999-2003),alex-van-pelt-qb
+A.Van Pelt,00-0022774,DEN (2005-2005),bradlee-van-pelt-qb
+B.Banks,00-0027618,WAS (2010-2010),brandon-banks-rb
+B.Banks,32013030-2d30-3032-3736-31382576d40e,WAS (2011-2012),brandon-banks-rb
+B.Colquitt,00-0026516,DEN (2010-2010),britton-colquitt-p
+B.Colquitt,32013030-2d30-3032-3635-31361c4d7f0a,DEN (2011-2011),britton-colquitt-p
+B.Fields,00-0025612,MIA (2008-2008),brandon-fields-p
+B.Fields,32013030-2d30-3032-3536-31327d77bc04,MIA (2012-2013),brandon-fields-p
+B.Gibson,00-0026937,LA (2010-2010),brandon-gibson-wr
+B.Gibson,32013030-2d30-3032-3639-3337e550df46,LA (2011-2011),brandon-gibson-wr
+B.Gradkowski,00-0024408,"CLE (2008-2008),LV (2009-2010),TB (2006-2007)",bruce-gradkowski-qb
+B.Gradkowski,32013030-2d30-3032-3434-3038f524922d,"CIN (2011-2012),PIT (2014-2014)",bruce-gradkowski-qb
+B.Green-Ellis,00-0025860,NE (2008-2010),benjarvus-green-ellis-rb
+B.Green-Ellis,32013030-2d30-3032-3538-3630d961ca12,"CIN (2012-2013),NE (2011-2011)",benjarvus-green-ellis-rb
+B.Hartline,00-0027077,MIA (2009-2010),brian-hartline-wr
+B.Hartline,32013030-2d30-3032-3730-373793caffd8,MIA (2011-2011),brian-hartline-wr
+B.Hill,32013030-2d30-3033-3232-39383b23dc09,"ARI (2017-2017),JAX (2016-2016)",bronson-hill-rb
+B.Hill,32013030-2d30-3033-3335-36379c914315,"ATL (2018-2019),CIN (2017-2017)",brian-hill-rb
+B.Hoyer,00-0026625,NE (2009-2010),brian-hoyer-qb
+B.Hoyer,32013030-2d30-3032-3636-3235a601d8e5,"ARI (2012-2012),CHI (2016-2016),CLE (2013-2014),HOU (2015-2015),IND (2019-2019),NE (2011-2018),SF (2017-2017)",brian-hoyer-qb
+B.Jackson,00-0025450,GB (2007-2010),brandon-jackson-rb
+B.Jackson,32013030-2d30-3032-3534-353011db9ba6,CLE (2012-2012),brandon-jackson-rb
+B.Jacobs,00-0023545,NYG (2005-2010),brandon-jacobs-rb
+B.Jacobs,32013030-2d30-3032-3335-3435e5f50fe8,"NYG (2011-2013),SF (2012-2012)",brandon-jacobs-rb
+B.Johnson,00-0008442,"DAL (2007-2008),MIN (2005-2006),TB (2001-2004),WAS (1999-2000)",brad-johnson-qb
+B.Johnson,00-0019172,"CHI (2005-2005),WAS (2002-2003)",bryan-johnson-fb
+B.Johnson,00-0021993,NE (2003-2004),bethel-johnson-wr
+B.Johnson,00-0022156,ARI (2004-2006),bryant-johnson-wr
+B.Johnson,32013030-2d30-3032-3231-353660e7c565,HOU (2011-2011),bryant-johnson-wr
+B.Kern,00-0025825,TEN (2010-2010),brett-kern-p
+B.Kern,32013030-2d30-3032-3538-3235a1e18149,TEN (2011-2019),brett-kern-p
+B.LaFell,00-0027681,CAR (2010-2010),brandon-lafell-wr
+B.LaFell,32013030-2d30-3032-3736-38313a4cc13f,"CAR (2012-2013),CIN (2016-2016),NE (2014-2015)",brandon-lafell-wr
+B.Leftwich,00-0022177,"ATL (2007-2007),JAX (2003-2006),PIT (2008-2010),TB (2009-2009)",byron-leftwich-qb
+B.Leftwich,32013030-2d30-3032-3231-3737dee12508,PIT (2012-2012),byron-leftwich-qb
+B.Leonard,00-0025439,"CIN (2009-2010),LA (2007-2008)",brian-leonard-rb
+B.Leonard,32013030-2d30-3032-3534-3339af7dd1ca,"CIN (2011-2012),TB (2013-2013)",brian-leonard-rb
+B.Lloyd,00-0022097,DEN (2010-2010),brandon-lloyd-wr
+B.Lloyd,32013030-2d30-3032-3230-39376094ad7b,LA (2011-2011),brandon-lloyd-wr
+B.Marshall,00-0024334,"DEN (2006-2009),MIA (2010-2010)",brandon-marshall-wr
+B.Marshall,32013030-2d30-3032-3433-3334d8cecffc,"CHI (2012-2012),MIA (2011-2011)",brandon-marshall-wr
+B.Marshall,32013030-2d30-3033-3239-3634a164d47b,"PHI (2016-2016),WAS (2017-2018)",byron-marshall-rb
+B.Miller,32013030-2d30-3032-3637-3132f46f4366,LA (2011-2011),britt-miller-lb
+B.Miller,32013030-2d30-3032-3831-3439c72dc458,SF (2011-2015),bruce-miller-fb
+B.Miller,32013030-2d30-3033-3330-36394e729430,HOU (2016-2017),braxton-miller-wr
+B.Mitchell,00-0011392,GB (1999-2000),basil-mitchell-rb
+B.Mitchell,00-0011399,"NYG (2003-2003),PHI (2000-2002),WAS (1999-1999)",brian-mitchell-rb
+B.Obomanu,00-0024463,SEA (2010-2010),ben-obomanu-wr
+B.Obomanu,32013030-2d30-3032-3434-36335b089313,SEA (2011-2012),ben-obomanu-wr
+B.Powell,32013030-2d30-3032-3830-36349cf1bce9,NYJ (2011-2019),bilal-powell-rb
+B.Powell,32013030-2d30-3033-3436-3436c702d044,DET (2018-2018),brandon-powell-wr
+B.Quinn,00-0025409,CLE (2007-2009),brady-quinn-qb
+B.Quinn,32013030-2d30-3032-3534-3039681cbb21,KC (2012-2012),brady-quinn-qb
+B.Roethlisberger,00-0022924,PIT (2004-2010),ben-roethlisberger-qb
+B.Roethlisberger,32013030-2d30-3032-3239-3234f41ff7f7,PIT (2011-2019),ben-roethlisberger-qb
+B.Scott,00-0026941,CIN (2009-2010),bernard-scott-rb
+B.Scott,32013030-2d30-3032-3639-343132b4b3bb,"BAL (2013-2013),CIN (2011-2012)",bernard-scott-rb
+B.Scott,32013030-2d30-3033-3434-31346ad31998,PHI (2019-2019),boston-scott-rb
+B.Smith,00-0024318,NYJ (2006-2010),brad-smith-wr
+B.Smith,32013030-2d30-3032-3433-3138f996ca29,"BUF (2011-2012),PHI (2013-2013)",brad-smith-wr
+B.Tate,00-0027057,NE (2009-2010),brandon-tate-wr
+B.Tate,32013030-2d30-3032-3730-3537eac585f2,"BUF (2016-2016),CIN (2012-2014)",brandon-tate-wr
+B.Tate,32013030-2d30-3032-3738-39308c123fd8,"CLE (2014-2014),HOU (2011-2013),MIN (2014-2014),PIT (2014-2014)",ben-tate-rb
+B.Volek,00-0019041,"LAC (2006-2010),TEN (2001-2005)",billy-volek-qb
+B.Volek,32013030-2d30-3031-3930-3431ebc5d385,LAC (2011-2011),billy-volek-qb
+C.Anderson,32013030-2d30-3032-3635-3738ac5b4fab,IND (2015-2015),colt-anderson-db
+C.Anderson,32013030-2d30-3032-3938-35347ae56d7e,"CAR (2018-2018),DEN (2013-2017),DET (2019-2019),LA (2018-2018)",cj-anderson-rb
+C.Batch,00-0000865,"DET (1999-2001),PIT (2003-2010)",charlie-batch-qb
+C.Batch,32013030-2d30-3030-3038-3635f69471c1,PIT (2011-2012),charlie-batch-qb
+C.Benson,00-0023439,"CHI (2005-2007),CIN (2008-2010)",cedric-benson-rb
+C.Benson,32013030-2d30-3032-3334-3339a83f6766,"CIN (2011-2011),GB (2012-2012)",cedric-benson-rb
+C.Brinkley,00-0026745,LAC (2010-2010),curtis-brinkley-rb
+C.Brinkley,32013030-2d30-3032-3637-343582afac60,LAC (2011-2012),curtis-brinkley-rb
+C.Brown,00-0022092,"HOU (2009-2009),TEN (2003-2007)",chris-brown-rb
+C.Brown,32013030-2d30-3033-3131-3138aae58913,CAR (2014-2016),corey-brown-wr
+C.Daniel,00-0026544,NO (2010-2010),chase-daniel-qb
+C.Daniel,32013030-2d30-3032-3635-3434e5fd94ff,"CHI (2018-2019),KC (2013-2015),NO (2011-2017),PHI (2016-2016)",chase-daniel-qb
+C.Davis,00-0022434,PIT (2007-2009),carey-davis-rb
+C.Davis,00-0025417,LAC (2007-2009),craig-davis-wr
+C.Davis,00-0025794,NYJ (2007-2007),chris-davis-wr
+C.Davis,32013030-2d30-3033-3338-3731ec0301e3,TEN (2018-2018),corey-davis-wr
+C.Hall,00-0027188,PHI (2010-2010),chad-hall-wr
+C.Hall,32013030-2d30-3032-3731-3838273ecad0,PHI (2011-2011),chad-hall-wr
+C.Hanie,00-0025970,CHI (2009-2010),caleb-hanie-qb
+C.Hanie,32013030-2d30-3032-3539-373029690f00,CHI (2011-2011),caleb-hanie-qb
+C.Henne,00-0026197,MIA (2008-2010),chad-henne-wr
+C.Henne,32013030-2d30-3032-3631-3937880c57ee,"JAX (2012-2017),KC (2018-2018),MIA (2011-2011)",chad-henne-wr
+C.Henry,00-0025437,TEN (2007-2008),chris-henry-rb
+C.Henry,32013030-2d30-3032-3834-323767227ca6,PHI (2011-2011),chas-henry-p
+C.Ivory,00-0027531,NO (2010-2010),chris-ivory-rb
+C.Ivory,32013030-2d30-3032-3735-33312117c671,"BUF (2018-2018),JAX (2016-2017),NO (2011-2012),NYJ (2013-2015)",chris-ivory-rb
+C.Johnson,00-0008454,PHI (2000-2000),charles-johnson-wr
+C.Johnson,00-0020397,CIN (2004-2010),chad-johnson-wr
+C.Johnson,00-0025389,DET (2007-2010),calvin-johnson-wr
+C.Johnson,00-0026164,TEN (2008-2010),chris-johnson-rb
+C.Johnson,32013030-2d30-3032-3533-38393e6651e0,DET (2011-2011),calvin-johnson-wr
+C.Johnson,32013030-2d30-3032-3631-36341e03d9e9,"ARI (2015-2017),NYJ (2014-2014),TEN (2011-2013)",chris-johnson-rb
+C.Jones,00-0008704,LAC (1999-1999),charlie-jones-wr
+C.Jones,32013030-2d30-3032-3831-3238c7b26a42,CAR (2019-2019),colin-jones-db
+C.Jones,32013030-2d30-3032-3836-3634e531f84b,DAL (2016-2017),chris-jones-p
+C.Jones,32013030-2d30-3033-3330-39385141444f,BUF (2016-2016),cardale-jones-qb
+C.Kluwe,00-0023060,MIN (2006-2009),chris-kluwe-p
+C.Kluwe,32013030-2d30-3032-3330-3630e93eeb9d,MIN (2011-2011),chris-kluwe-p
+C.Martin,00-0010436,PHI (1999-2002),cecil-martin-fb
+C.Martin,00-0010442,NYJ (1999-2005),curtis-martin-rb
+C.McCoy,00-0027688,CLE (2010-2010),colt-mccoy-qb
+C.McCoy,32013030-2d30-3032-3736-38385988c69a,"CLE (2011-2012),SF (2013-2013),WAS (2014-2019)",colt-mccoy-qb
+C.Ogbonnaya,00-0027140,LA (2009-2009),chris-ogbonnaya-rb
+C.Ogbonnaya,32013030-2d30-3032-3731-3430e73f7935,"CAR (2014-2014),CLE (2011-2013),HOU (2011-2011)",chris-ogbonnaya-rb
+C.Painter,00-0027134,IND (2009-2009),curtis-painter-qb
+C.Painter,32013030-2d30-3032-3731-3334c47ca458,"IND (2011-2011),NYG (2013-2013)",curtis-painter-qb
+C.Palmer,00-0021429,CIN (2004-2010),carson-palmer-qb
+C.Palmer,32013030-2d30-3032-3134-32391c8963bc,"ARI (2013-2017),LV (2011-2012)",carson-palmer-qb
+C.Peerman,00-0026932,CIN (2010-2010),cedric-peerman-rb
+C.Peerman,32013030-2d30-3032-3639-3332f0357818,CIN (2011-2016),cedric-peerman-rb
+C.Redman,00-0019709,"ATL (2007-2010),BAL (2000-2003)",chris-redman-qb
+C.Redman,32013030-2d30-3031-3937-3039dda68e05,ATL (2011-2011),chris-redman-qb
+C.Rogers,00-0022072,DET (2003-2003),charles-rogers-wr
+C.Rogers,32013030-2d30-3033-3233-35355e7ab91e,IND (2017-2019),chester-rogers-wr
+C.Spiller,00-0027861,BUF (2010-2010),cj-spiller-rb
+C.Spiller,32013030-2d30-3032-3738-3631206be155,"BUF (2011-2014),KC (2017-2017),NO (2015-2015),NYJ (2016-2016),SEA (2016-2016)",cj-spiller-rb
+C.Taylor,00-0021314,"BAL (2002-2005),CHI (2010-2010),MIN (2006-2009)",chester-taylor-rb
+C.Taylor,00-0023844,HOU (2006-2008),chris-taylor-rb
+C.Taylor,32013030-2d30-3032-3133-313418b6361f,ARI (2011-2011),chester-taylor-rb
+C.Washington,00-0026353,JAX (2008-2008),chauncy-washington-rb
+C.Washington,32013030-2d30-3032-3633-35335a6e280b,DAL (2011-2011),chauncy-washington-rb
+C.Wells,00-0027007,ARI (2009-2010),beanie-wells-rb
+C.Wells,32013030-2d30-3032-3730-303749c47818,ARI (2011-2012),beanie-wells-rb
+C.Whitehurst,00-0024296,"LAC (2006-2006),SEA (2010-2010)",charlie-whitehurst-qb
+C.Whitehurst,32013030-2d30-3032-3432-393657c9ed83,"CLE (2016-2016),IND (2015-2015),LAC (2013-2013),SEA (2011-2011),TEN (2014-2014)",charlie-whitehurst-qb
+C.Williams,00-0023440,TB (2005-2010),cadillac-williams-rb
+C.Williams,32013030-2d30-3032-3334-3430b8dd718e,LA (2011-2011),cadillac-williams-rb
+C.Williams,32013030-2d30-3032-3636-3931b74ad9ea,CHI (2014-2014),chris-williams-2-wr
+C.Williams,32013030-2d30-3033-3339-333391b03e3b,ARI (2017-2018),chad-williams-wr
+D.Akers,00-0000108,PHI (2000-2006),david-akers-k
+D.Akers,32013030-2d30-3030-3031-3038742ce8f8,SF (2011-2011),david-akers-k
+D.Alexander,00-0000145,KC (1999-2001),derrick-alexander-wr
+D.Alexander,32013030-2d30-3032-3739-3132ccd1041e,LAC (2012-2012),danario-alexander-wr
+D.Allen,00-0020058,JAX (2003-2003),david-allen-rb
+D.Allen,32013030-2d30-3032-3936-3839b2db5387,IND (2012-2015),dwayne-allen-te
+D.Amendola,00-0026035,LA (2009-2010),danny-amendola-wr
+D.Amendola,32013030-2d30-3032-3630-33356909a613,"DET (2019-2019),LA (2012-2012),MIA (2018-2018),NE (2013-2017)",danny-amendola-wr
+D.Anderson,00-0021048,ARI (2002-2005),damien-anderson-rb
+D.Anderson,00-0023645,"ARI (2010-2010),CLE (2006-2009)",derek-anderson-qb
+D.Anderson,00-0025582,DAL (2008-2008),deon-anderson-fb
+D.Anderson,32013030-2d30-3032-3336-343575bf3e08,"BUF (2018-2018),CAR (2011-2017)",derek-anderson-qb
+D.Avery,00-0026173,LA (2008-2009),donnie-avery-wr
+D.Avery,32013030-2d30-3032-3631-373359692e56,"IND (2012-2012),KC (2013-2013)",donnie-avery-wr
+D.Bennett,00-0001101,LAC (1999-2003),darren-bennett-p
+D.Bennett,00-0001102,"KC (1999-2000),WAS (2001-2001)",donnell-bennett-rb
+D.Bennett,00-0019976,TEN (2003-2005),drew-bennett-wr
+D.Bess,00-0026000,MIA (2008-2010),davone-bess-wr
+D.Bess,32013030-2d30-3032-3630-3030c0405014,MIA (2011-2011),davone-bess-wr
+D.Bowe,00-0025410,KC (2010-2010),dwayne-bowe-wr
+D.Bowe,32013030-2d30-3032-3534-31305ee0c746,KC (2011-2011),dwayne-bowe-wr
+D.Brees,00-0020531,"LAC (2001-2005),NO (2006-2010)",drew-brees-qb
+D.Brees,32013030-2d30-3032-3035-33318e1e348d,NO (2011-2019),drew-brees-qb
+D.Brown,00-0001907,ARI (1999-2000),dave-brown-qb
+D.Brown,00-0020376,"CAR (2002-2002),KC (2005-2006)",dee-brown-rb
+D.Brown,00-0021434,PIT (2004-2004),dante-brown-rb
+D.Brown,00-0027003,IND (2009-2010),donald-brown-rb
+D.Brown,32013030-2d30-3032-3730-3033d36fee7f,"IND (2011-2013),LAC (2014-2015)",donald-brown-rb
+D.Bryant,00-0027902,DAL (2010-2010),dez-bryant-wr
+D.Bryant,32013030-2d30-3032-3739-30326e27afaa,DAL (2011-2017),dez-bryant-wr
+D.Butler,00-0027063,SEA (2010-2010),deon-butler-wr
+D.Butler,32013030-2d30-3032-3839-35321eedeb73,ARI (2016-2016),drew-butler-p
+D.Carr,00-0020608,"CAR (2007-2007),HOU (2002-2006),NYG (2008-2009),SF (2010-2010)",david-carr-qb
+D.Carr,32013030-2d30-3032-3036-30383f2c3b17,NYG (2012-2012),david-carr-qb
+D.Carr,32013030-2d30-3033-3132-3830ee8bf3c4,LV (2014-2019),derek-carr-qb
+D.Carter,00-0022879,CAR (2006-2006),drew-carter-wr
+D.Carter,32013030-2d30-3032-3830-35371547b492,IND (2011-2012),delone-carter-rb
+D.Carter,32013030-2d30-3033-3137-36332a66fa20,HOU (2018-2018),deandre-carter-rb
+D.Colquitt,00-0023534,KC (2006-2009),dustin-colquitt-p
+D.Colquitt,32013030-2d30-3032-3335-3334dc594716,KC (2011-2019),dustin-colquitt-p
+D.Davis,00-0021979,HOU (2003-2005),domanick-williams-rb
+D.Davis,32013030-2d30-3032-3838-363348c474ff,ATL (2013-2013),drew-davis-wr
+D.Foster,00-0021164,"CAR (2003-2007),SF (2008-2008)",deshaun-foster-rb
+D.Foster,32013030-2d30-3033-3235-37373604d8f6,"ARI (2017-2017),NE (2016-2016)",dj-foster-rb
+D.Harris,32013030-2d30-3032-3831-3134ffabe51a,"DAL (2013-2014),LV (2018-2018),NYG (2015-2015)",dwayne-harris-wr
+D.Harris,32013030-2d30-3032-3834-3039b6bc6edc,"GB (2012-2014),JAX (2011-2011),SEA (2015-2015),SF (2015-2016)",dujuan-harris-rb
+D.Harris,32013030-2d30-3033-3532-3135f132f2f7,NO (2019-2019),deonte-harris-wr
+D.Harris,32013030-2d30-3033-3536-3537ff4277e1,NE (2019-2019),damien-harris-rb
+D.Henderson,00-0022929,NO (2005-2010),devery-henderson-wr
+D.Henderson,32013030-2d30-3032-3239-32399ca637a6,NO (2011-2012),devery-henderson-wr
+D.Henderson,32013030-2d30-3033-3335-3831fc77e6b7,"DEN (2017-2017),NYJ (2018-2018)",deangleo-henderson-rb
+D.Henderson,32013030-2d30-3033-3536-363416e8d9a5,LA (2019-2019),darrell-henderson-rb
+D.Hester,00-0024272,CHI (2007-2010),devin-hester-kr
+D.Hester,32013030-2d30-3032-3432-3732d4c7b991,"ATL (2014-2014),CHI (2011-2012)",devin-hester-kr
+D.Heyward-Bey,00-0026983,LV (2009-2010),darrius-heyward-bey-wr
+D.Heyward-Bey,32013030-2d30-3032-3639-383382f26efa,"IND (2013-2013),LV (2012-2012),PIT (2016-2018)",darrius-heyward-bey-wr
+D.Jackson,00-0019663,SEA (2000-2005),darrell-jackson-wr
+D.Jackson,00-0026189,PHI (2008-2010),desean-jackson-wr
+D.Jackson,32013030-2d30-3032-3631-383993ac1996,"PHI (2011-2013),TB (2017-2018),WAS (2014-2014)",desean-jackson-wr
+D.Jackson,32013030-2d30-3033-3236-33361849cf2a,GB (2016-2016),don-jackson-rb
+D.Jackson,32013030-2d30-3033-3330-3439ccd92aa2,DAL (2018-2018),darius-jackson-rb
+D.Johnson,00-0008484,"ARI (2008-2008),PHI (2006-2006),TB (2009-2009)",dirk-johnson-p
+D.Johnson,00-0019087,"ATL (2000-2003),TEN (2004-2004)",doug-johnson-qb
+D.Johnson,32013030-2d30-3032-3639-35377776054a,LAC (2015-2015),david-johnson-te
+D.Johnson,32013030-2d30-3032-3934-33356e786479,"HOU (2014-2014),NE (2015-2015),PHI (2012-2012)",damaris-johnson-wr
+D.Johnson,32013030-2d30-3033-3032-333642fc65be,HOU (2013-2013),dennis-johnson-rb
+D.Johnson,32013030-2d30-3033-3231-3837af32a123,ARI (2015-2019),david-johnson-rb
+D.Johnson,32013030-2d30-3033-3232-3537f7a6ee8b,"CLE (2015-2018),HOU (2019-2019)",duke-johnson-rb
+D.Johnson,32013030-2d30-3033-3532-313684e90af8,PIT (2019-2019),diontae-johnson-wr
+D.Johnson,32013030-2d30-3033-3536-323815aa4463,CLE (2019-2019),dernest-johnson-rb
+D.Jones,00-0022684,"LA (2008-2008),MIA (2005-2006)",donnie-jones-p
+D.Jones,00-0027518,BUF (2010-2010),donald-jones-wr
+D.Jones,32013030-2d30-3032-3236-3834f2047ed5,PHI (2016-2016),donnie-jones-p
+D.Jones,32013030-2d30-3032-3735-313841a3803b,BUF (2011-2011),donald-jones-wr
+D.Jones,32013030-2d30-3033-3537-31306de02154,NYG (2019-2019),daniel-jones-qb
+D.Karim,00-0027779,JAX (2010-2010),deji-karim-rb
+D.Karim,32013030-2d30-3032-3737-37393170c991,"HOU (2013-2013),JAX (2011-2011)",deji-karim-rb
+D.McCluster,00-0027651,KC (2010-2010),dexter-mccluster-wr
+D.McCluster,32013030-2d30-3032-3736-35318c25fb71,"KC (2011-2013),LAC (2016-2016),TEN (2014-2015)",dexter-mccluster-wr
+D.McFadden,00-0026144,LV (2008-2010),darren-mcfadden-wr
+D.McFadden,32013030-2d30-3032-3631-3434b1da4c3a,"DAL (2015-2017),LV (2011-2014)",darren-mcfadden-wr
+D.McNabb,00-0011022,"PHI (1999-2009),WAS (2000-2010)",donovan-mcnabb-qb
+D.McNabb,32013030-2d30-3031-3130-3232b50875be,MIN (2011-2011),donovan-mcnabb-qb
+D.Moore,00-0026620,IND (2010-2010),devin-moore-rb
+D.Moore,32013030-2d30-3032-3830-3836831cf024,LV (2011-2014),denarius-moore-wr
+D.Moore,32013030-2d30-3033-3335-3839c5d25ee7,SEA (2018-2019),david-moore-wr
+D.Moore,32013030-2d30-3033-3438-3237a7c47510,CAR (2018-2019),dj-moore-wr
+D.Orlovsky,00-0023578,DET (2005-2008),dan-orlovsky-qb
+D.Orlovsky,32013030-2d30-3032-3335-3738d469dbc2,"DET (2015-2015),IND (2011-2011),TB (2012-2012)",dan-orlovsky-qb
+D.Reed,00-0027755,BAL (2010-2010),david-reed-wr
+D.Reed,32013030-2d30-3032-3737-3535d1520901,BAL (2011-2011),david-reed-wr
+D.Scott,00-0014544,DAL (2002-2002),darnay-scott-wr
+D.Scott,32013030-2d30-3032-3831-3539a06c11fb,NYG (2011-2013),darel-scott-rb
+D.Scott,32013030-2d30-3033-3432-3536c2b7aaa5,NYG (2019-2019),damari-scott-wr
+D.Sepulveda,00-0025499,PIT (2007-2007),daniel-sepulveda-p
+D.Sepulveda,32013030-2d30-3032-3534-393976400607,PIT (2011-2011),daniel-sepulveda-p
+D.Sproles,00-0023564,LAC (2005-2010),darren-sproles-rb
+D.Sproles,32013030-2d30-3032-3335-3634a4a97bd6,"NO (2011-2013),PHI (2014-2019)",darren-sproles-rb
+D.Stallworth,00-0021147,"BAL (2010-2010),CLE (2008-2008),NE (2007-2007),NO (2002-2005)",donte-stallworth-wr
+D.Stallworth,32013030-2d30-3032-3131-3437688e4839,WAS (2011-2011),donte-stallworth-wr
+D.Stanton,00-0025430,DET (2008-2010),drew-stanton-qb
+D.Stanton,32013030-2d30-3032-3534-3330104af661,ARI (2014-2017),drew-stanton-qb
+D.Thomas,00-0024301,NO (2009-2009),david-thomas-te
+D.Thomas,00-0026174,WAS (2008-2009),devin-thomas-wr
+D.Thomas,00-0027874,DEN (2010-2010),demaryius-thomas-wr
+D.Thomas,32013030-2d30-3032-3738-3734e1cdacfa,DEN (2011-2011),demaryius-thomas-wr
+D.Thomas,32013030-2d30-3032-3830-30308a7b2fac,MIA (2011-2013),daniel-thomas-rb
+D.Thomas,32013030-2d30-3033-3130-3630d691497a,"BAL (2019-2019),KC (2014-2019)",deanthony-thomas-rb
+D.Thompson,00-0016373,WAS (2002-2002),derrius-thompson-wr
+D.Thompson,32013030-2d30-3032-3933-3838bf78b68b,BUF (2017-2017),deonte-thompson-wr
+D.Thompson,32013030-2d30-3033-3531-3438206ac83b,KC (2019-2019),darwin-thompson-rb
+D.Walker,00-0024389,SF (2008-2010),delanie-walker-te
+D.Walker,00-0024850,HOU (2007-2007),darius-walker-rb
+D.Walker,32013030-2d30-3032-3433-38399dd62eb4,"SF (2011-2011),TEN (2015-2017)",delanie-walker-te
+D.Ward,00-0017160,"DAL (2004-2004),MIA (2001-2001),NYJ (1999-2000)",dedric-ward-wr
+D.Ward,00-0022770,"HOU (2010-2010),NYG (2005-2008),TB (2009-2009)",derrick-ward-rb
+D.Ward,32013030-2d30-3032-3237-3730ab3e1585,HOU (2011-2011),derrick-ward-rb
+D.Ware,00-0024559,NYG (2008-2010),danny-ware-rb
+D.Ware,32013030-2d30-3032-3435-35399e33cf37,"NYG (2011-2011),TB (2012-2012)",danny-ware-rb
+D.Washington,00-0017239,NYG (2001-2001),damon-washington-rb
+D.Washington,32013030-2d30-3033-3234-3530b050d491,"DET (2016-2017),NO (2018-2019)",dwayne-washington-rb
+D.Washington,32013030-2d30-3033-3239-343011c356cf,LV (2016-2019),deandre-washington-rb
+D.Williams,00-0024242,CAR (2006-2010),deangelo-williams-rb
+D.Williams,00-0027056,DET (2009-2009),derrick-williams-wr
+D.Williams,00-0027893,TEN (2010-2010),damian-williams-wr
+D.Williams,32013030-2d30-3032-3432-343298c71478,"CAR (2011-2014),PIT (2016-2016)",deangelo-williams-rb
+D.Williams,32013030-2d30-3033-3038-3734bb46867c,MIA (2014-2017),damien-williams-rb
+D.Williams,32013030-2d30-3033-3433-303141fa46d2,KC (2019-2019),darrell-williams-rb
+D.Williams,32013030-2d30-3033-3434-3237ec3b1bc6,JAX (2018-2018),david-williams-rb
+D.Williams,32013030-2d30-3033-3439-3935c20d604a,GB (2019-2019),dexter-williams-rb
+D.Woodhead,00-0026019,"NE (2010-2010),NYJ (2009-2009)",danny-woodhead-rb
+D.Woodhead,32013030-2d30-3032-3630-3139a0566537,"BAL (2017-2017),LAC (2013-2016),NE (2011-2012)",danny-woodhead-rb
+D.Young,00-0026852,WAS (2010-2010),darrel-young-fb
+D.Young,32013030-2d30-3032-3638-35323e43b6cd,WAS (2011-2015),darrel-young-fb
+E.Bennett,00-0001103,CHI (1999-1999),edgar-bennett-rb
+E.Bennett,00-0026210,CHI (2010-2010),earl-bennett-rb
+E.Doucet,00-0026221,ARI (2010-2010),early-doucet-wr
+E.Doucet,32013030-2d30-3032-3632-323146fc0f4f,ARI (2012-2012),early-doucet-wr
+E.Graham,00-0021755,TB (2004-2010),earnest-graham-rb
+E.Graham,32013030-2d30-3032-3137-3535b30e4514,TB (2011-2011),earnest-graham-rb
+E.Manning,00-0022803,NYG (2004-2010),eli-manning-qb
+E.Manning,32013030-2d30-3032-3238-3033cc58aa39,NYG (2011-2019),eli-manning-qb
+E.Royal,00-0026182,DEN (2008-2010),eddie-royal-wr
+E.Royal,32013030-2d30-3032-3631-3832e6c0dd5e,"CHI (2015-2015),DEN (2011-2011),LAC (2012-2014)",eddie-royal-wr
+E.Weems,00-0024535,ATL (2009-2009),eric-weems-wr
+E.Weems,32013030-2d30-3032-3435-33354e73afea,"ATL (2015-2015),TEN (2017-2017)",eric-weems-wr
+F.Davis,00-0026188,WAS (2008-2008),fred-davis-te
+F.Davis,32013030-2d30-3032-3631-383891376c4e,WAS (2012-2012),fred-davis-te
+F.Gore,00-0023500,SF (2005-2010),frank-gore-rb
+F.Gore,32013030-2d30-3032-3335-3030dd77cad3,"BUF (2019-2019),IND (2015-2017),MIA (2018-2018),SF (2011-2014)",frank-gore-rb
+F.Jackson,00-0020780,CLE (2002-2005),frisman-jackson-wr
+F.Jackson,00-0024204,BUF (2007-2010),fred-jackson-rb
+F.Jackson,32013030-2d30-3032-3432-303437764cc7,"BUF (2011-2014),SEA (2015-2015)",fred-jackson-rb
+F.Jones,00-0026162,DAL (2008-2010),felix-jones-rb
+F.Jones,32013030-2d30-3032-3631-36322a6ea14a,"DAL (2011-2012),PIT (2013-2013)",felix-jones-rb
+G.Jones,00-0008751,CLE (1999-1999),george-jones-rb
+G.Jones,00-0022897,JAX (2004-2010),greg-jones-rb
+G.Jones,32013030-2d30-3032-3238-39371c364df6,"HOU (2013-2013),JAX (2011-2012)",greg-jones-rb
+G.Tate,00-0027891,SEA (2010-2010),golden-tate-wr
+G.Tate,32013030-2d30-3032-3738-39319adae9d4,"DET (2014-2018),NYG (2019-2019),PHI (2018-2018),SEA (2011-2013)",golden-tate-wr
+H.Douglas,00-0026224,ATL (2008-2010),harry-douglas-wr
+H.Douglas,32013030-2d30-3032-3632-32344a4ebd9a,"ATL (2011-2012),TEN (2015-2015)",harry-douglas-wr
+I.Redman,00-0026566,PIT (2010-2010),isaac-redman-rb
+I.Redman,32013030-2d30-3032-3635-3636f818af44,PIT (2011-2013),isaac-redman-rb
+J.Adams,32013030-2d30-3032-3932-3731465d620b,CAR (2012-2012),joe-adams-wr
+J.Adams,32013030-2d30-3033-3434-3537579fb883,PHI (2018-2018),josh-adams-rb
+J.Addai,00-0024245,IND (2006-2010),joseph-addai-rb
+J.Addai,32013030-2d30-3032-3432-3435cf4abb90,IND (2011-2011),joseph-addai-rb
+J.Allen,00-0000210,"CHI (1999-2001),HOU (2002-2002)",james-allen-rb
+J.Allen,32013030-2d30-3033-3135-373735f054df,"BAL (2015-2018),NYG (2019-2019)",javorius-allen-rb
+J.Allen,32013030-2d30-3033-3438-3537f3a13a66,BUF (2018-2019),josh-allen-qb
+J.Arenas,00-0027660,KC (2010-2010),javier-arenas-cb
+J.Arenas,32013030-2d30-3032-3736-363023f68f90,KC (2011-2011),javier-arenas-cb
+J.Avant,00-0024324,PHI (2007-2007),jason-avant-wr
+J.Avant,32013030-2d30-3032-3433-32345833fa0d,CAR (2014-2014),jason-avant-wr
+J.Baker,00-0019052,LA (2001-2001),john-baker-p
+J.Baker,00-0019921,"CAR (2010-2010),SF (2001-2001)",jason-baker-p
+J.Battle,00-0025701,KC (2007-2010),jackie-battle-rb
+J.Battle,32013030-2d30-3032-3537-3031b7f633f4,"KC (2011-2011),LAC (2012-2012),TEN (2013-2014)",jackie-battle-rb
+J.Beck,00-0025427,MIA (2007-2007),john-beck-qb
+J.Beck,32013030-2d30-3032-3534-323797243087,WAS (2011-2011),john-beck-qb
+J.Bell,00-0022875,TEN (2007-2007),jacob-bell-g
+J.Bell,32013030-2d30-3032-3732-313821a0e096,"CHI (2016-2016),DET (2012-2015)",joique-bell-rb
+J.Best,00-0027880,DET (2010-2010),jahvid-best-rb
+J.Best,32013030-2d30-3032-3738-3830f5ea0036,DET (2011-2011),jahvid-best-rb
+J.Brown,00-0021940,LA (2009-2009),josh-brown-k
+J.Brown,32013030-2d30-3032-3139-3430674c3aa3,NYG (2015-2015),josh-brown-k
+J.Brown,32013030-2d30-3033-3130-35315f0457e5,"ARI (2017-2017),BAL (2018-2018),BUF (2019-2019)",john-brown-wr
+J.Campbell,00-0023460,"LV (2010-2010),WAS (2006-2009)",jason-campbell-wr
+J.Campbell,32013030-2d30-3032-3334-3630311d0939,"CHI (2012-2012),CIN (2014-2014),CLE (2013-2013),LV (2011-2011)",jason-campbell-wr
+J.Charles,00-0026213,KC (2008-2010),jamaal-charles-rb
+J.Charles,32013030-2d30-3032-3632-313325b4e8c2,"DEN (2017-2017),JAX (2018-2018),KC (2011-2016)",jamaal-charles-rb
+J.Clausen,00-0027659,CAR (2010-2010),jimmy-clausen-qb
+J.Clausen,32013030-2d30-3032-3736-3539299451a0,"BAL (2015-2015),CHI (2014-2015)",jimmy-clausen-qb
+J.Conner,00-0027739,NYJ (2010-2010),john-conner-rb
+J.Conner,32013030-2d30-3032-3737-3339a4aecce0,NYJ (2011-2014),john-conner-rb
+J.Conner,32013030-2d30-3033-3335-35336659a949,PIT (2017-2019),james-conner-rb
+J.Cook,00-0020391,"HOU (2006-2007),TB (2001-2003)",jameel-cook-fb
+J.Cook,32013030-2d30-3032-3730-3631724728ba,LA (2014-2014),jared-cook-te
+J.Cotchery,00-0022811,NYJ (2004-2010),jerricho-cotchery-wr
+J.Cotchery,32013030-2d30-3032-3238-313152a073a9,"CAR (2014-2015),PIT (2011-2013)",jerricho-cotchery-wr
+J.Cribbs,00-0023176,CLE (2006-2010),josh-cribbs-wr
+J.Cribbs,32013030-2d30-3032-3331-3736cf71990d,"CLE (2011-2012),NYJ (2013-2013)",josh-cribbs-wr
+J.Cutler,00-0024226,"CHI (2009-2010),DEN (2006-2008)",jay-cutler-qb
+J.Cutler,32013030-2d30-3032-3432-3236d681c61c,"CHI (2011-2016),MIA (2017-2017)",jay-cutler-qb
+J.Davis,00-0024158,CHI (2008-2008),jason-davis-rb
+J.Davis,00-0027130,"CLE (2009-2010),WAS (2010-2010)",james-davis-rb
+J.Davis,32013030-2d30-3033-3337-3630ca262bde,LA (2017-2018),justin-davis-rb
+J.Delhomme,00-0004161,"CAR (2003-2009),CLE (2010-2010),NO (1999-2002)",jake-delhomme-qb
+J.Delhomme,32013030-2d30-3030-3431-36314534ade6,HOU (2011-2011),jake-delhomme-qb
+J.Dwyer,00-0027786,PIT (2010-2010),jonathan-dwyer-rb
+J.Dwyer,32013030-2d30-3032-3737-383640137b50,"ARI (2014-2014),PIT (2011-2013)",jonathan-dwyer-rb
+J.Edelman,00-0027150,NE (2009-2010),julian-edelman-wr
+J.Edelman,32013030-2d30-3032-3731-35304d0e9eb8,NE (2011-2019),julian-edelman-wr
+J.Feely,00-0019770,ARI (2010-2010),jay-feely-k
+J.Feely,32013030-2d30-3031-3937-37304370e41f,ARI (2012-2012),jay-feely-k
+J.Felton,00-0026286,DET (2008-2010),jerome-felton-rb
+J.Felton,32013030-2d30-3032-3632-3836b7f72579,"BUF (2015-2016),CAR (2011-2011),MIN (2014-2014)",jerome-felton-rb
+J.Flacco,00-0026158,BAL (2008-2010),joe-flacco-qb
+J.Flacco,32013030-2d30-3032-3631-3538c6a10853,"BAL (2011-2018),DEN (2019-2019)",joe-flacco-qb
+J.Ford,00-0027709,LV (2010-2010),jacoby-ford-wr
+J.Ford,32013030-2d30-3032-3737-30396d79f884,LV (2011-2013),jacoby-ford-wr
+J.Forsett,00-0026373,SEA (2009-2010),justin-forsett-rb
+J.Forsett,32013030-2d30-3032-3633-3733685fb6e5,"BAL (2014-2016),DEN (2016-2016),DET (2016-2016),HOU (2012-2012),JAX (2013-2013),SEA (2011-2011)",justin-forsett-rb
+J.Franklin,32013030-2d30-3033-3030-373867fd7423,GB (2013-2013),johnathan-franklin-rb
+J.Franklin,32013030-2d30-3033-3437-30353ec5c20c,TB (2019-2019),john-franklin-db
+J.Freeman,00-0026993,TB (2009-2010),josh-freeman-qb
+J.Freeman,32013030-2d30-3032-3639-3933413b75ca,"IND (2015-2015),MIN (2013-2013),TB (2011-2013)",josh-freeman-qb
+J.Graham,00-0006208,"GB (2002-2002),SEA (2001-2001)",jay-graham-rb
+J.Graham,00-0027696,NO (2010-2010),jimmy-graham-te
+J.Graham,32013030-2d30-3032-3736-39363e3fa7c9,SEA (2016-2016),jimmy-graham-te
+J.Green,00-0006331,"TB (1999-2000),WAS (2002-2002)",jacquez-green-wr
+J.Green,00-0023591,BAL (2005-2005),justin-green-fb
+J.Harris,00-0022363,CAR (2004-2004),joey-harris-rb
+J.Harris,32013030-2d30-3033-3134-3530dc391182,PIT (2014-2014),josh-harris-rb
+J.Harrison,00-0024359,"CLE (2006-2010),PHI (2010-2010)",jerome-harrison-rb
+J.Harrison,32013030-2d30-3032-3433-353924092e52,DET (2011-2011),jerome-harrison-rb
+J.Hester,00-0026209,LAC (2008-2010),jacob-hester-rb
+J.Hester,32013030-2d30-3032-3632-3039290a6776,"DEN (2012-2012),LAC (2011-2011)",jacob-hester-rb
+J.Hill,00-0025463,SF (2008-2008),jason-hill-wr
+J.Hill,32013030-2d30-3033-3032-3136ad823d70,NO (2013-2017),josh-hill-te
+J.Hill,32013030-2d30-3033-3133-30316985927d,"CIN (2014-2017),NE (2018-2018)",jeremy-hill-rb
+J.Hill,32013030-2d30-3033-3439-3735223dcaa7,BAL (2019-2019),justice-hill-rb
+J.Jackson,00-0019682,DEN (2000-2003),jarious-jackson-qb
+J.Jackson,00-0020430,"ARI (2005-2005),CLE (2001-2004)",james-jackson-rb
+J.Jackson,32013030-2d30-3033-3434-34303c2d1fbf,LAC (2018-2019),justin-jackson-rb
+J.Jett,00-0008400,LV (2000-2000),james-jett-wr
+J.Jett,00-0008401,DET (1999-2002),john-jett-wr
+J.Johnson,00-0008529,MIA (1999-2001),jj-johnson-rb
+J.Johnson,00-0022141,CIN (2003-2009),jeremi-johnson-fb
+J.Johnson,00-0025913,CIN (2008-2008),james-johnson-rb
+J.Johnson,00-0026300,TB (2009-2010),josh-johnson-qb
+J.Johnson,32013030-2d30-3032-3633-30309d9860a0,"CIN (2013-2013),CLE (2012-2012),TB (2011-2011),WAS (2018-2018)",josh-johnson-qb
+J.Johnson,32013030-2d30-3032-3637-393963be416c,DEN (2011-2011),jeremiah-johnson-rb
+J.Jones,00-0022840,"DAL (2004-2007),NO (2010-2010),SEA (2008-2010)",julius-jones-rb
+J.Jones,00-0025460,HOU (2007-2010),jacoby-jones-wr
+J.Jones,32013030-2d30-3032-3534-363091abd5a0,"BAL (2012-2014),HOU (2011-2011)",jacoby-jones-wr
+J.Jones,32013030-2d30-3032-3739-3434d4d3846d,ATL (2011-2019),julio-jones-wr
+J.Jones,32013030-2d30-3033-3435-36306ee49509,LAC (2018-2018),jj-jones-wr
+J.Kitna,00-0009311,"CIN (2001-2005),DAL (2010-2010),DET (2006-2008),SEA (1999-2000)",jon-kitna-qb
+J.Kitna,32013030-2d30-3030-3933-3131367590c9,DAL (2011-2011),jon-kitna-qb
+J.Kuhn,00-0022999,"GB (2008-2010),PIT (2006-2006)",john-kuhn-fb
+J.Kuhn,32013030-2d30-3032-3239-3939bbbfa741,"GB (2011-2015),NO (2016-2017)",john-kuhn-fb
+J.Lewis,00-0009868,CAR (1999-2000),jeff-lewis-qb
+J.Lewis,00-0009869,"BAL (1999-2001),HOU (2002-2002)",jermaine-lewis-rb
+J.Lewis,00-0019238,SF (2000-2000),jonas-lewis-lb
+J.Lewis,00-0019693,"BAL (2000-2006),CLE (2007-2009)",jamal-lewis-rb
+J.Lewis,32013030-2d30-3033-3339-32387c23dd10,DAL (2018-2018),jourdan-lewis-cb
+J.Losman,00-0022912,"BUF (2004-2008),LV (2009-2009)",jp-losman-qb
+J.Losman,32013030-2d30-3032-3239-31326ca7d078,MIA (2011-2011),jp-losman-qb
+J.Maclin,00-0026995,PHI (2009-2010),jeremy-maclin-wr
+J.Maclin,32013030-2d30-3032-3639-39357171483a,"KC (2015-2016),PHI (2011-2011)",jeremy-maclin-wr
+J.Martin,00-0010455,"JAX (2000-2000),LA (2001-2005),NO (2006-2007)",jamie-martin-qb
+J.Martin,00-0021387,DAL (2003-2003),jamar-martin-fb
+J.McCown,00-0021206,"ARI (2002-2005),CAR (2008-2009),LV (2007-2007)",josh-mccown-qb
+J.McCown,32013030-2d30-3032-3132-3036625eba8c,"CHI (2011-2013),CLE (2015-2016),NYJ (2017-2018),PHI (2019-2019),TB (2014-2014)",josh-mccown-qb
+J.McKnight,00-0010974,MIA (2001-2003),james-mcknight-wr
+J.McKnight,00-0027712,NYJ (2010-2010),joe-mcknight-wr
+J.McKnight,32013030-2d30-3032-3737-313259ab26dd,"KC (2014-2014),NYJ (2011-2012)",joe-mcknight-wr
+J.Miller,00-0011276,CHI (1999-2002),jim-miller-qb
+J.Miller,00-0011279,PIT (1999-2003),josh-miller-p
+J.Morgan,00-0026314,SF (2009-2010),josh-morgan-wr
+J.Morgan,32013030-2d30-3032-3633-3134eae926fa,"CHI (2014-2014),WAS (2012-2013)",josh-morgan-wr
+J.Morgan,32013030-2d30-3032-3835-33325ae293aa,NO (2012-2014),joe-morgan-wr
+J.Nelson,32013030-2d30-3032-3631-3736d63ba863,LV (2018-2018),jordy-nelson-wr
+J.Nelson,32013030-2d30-3033-3231-3132e3e0bff9,ARI (2015-2018),jj-nelson-wr
+J.Norwood,00-0024294,ATL (2006-2010),jerious-norwood-rb
+J.Norwood,32013030-2d30-3032-3432-3934b8660ecf,LA (2011-2011),jerious-norwood-rb
+J.Norwood,32013030-2d30-3032-3637-3339295e70c1,"CLE (2012-2012),DEN (2016-2016)",jordan-norwood-wr
+J.Palmer,00-0020483,NYG (2002-2003),jesse-palmer-qb
+J.Palmer,00-0025592,CIN (2008-2010),jordan-palmer-qb
+J.Palmer,32013030-2d30-3032-3535-393279a9cee5,TEN (2014-2014),jordan-palmer-qb
+J.Parmele,00-0026316,BAL (2008-2010),jalen-parmele-rb
+J.Parmele,32013030-2d30-3032-3633-31361d295c51,"ARI (2014-2014),JAX (2012-2012)",jalen-parmele-rb
+J.Reed,00-0021166,BUF (2003-2007),josh-reed-wr
+J.Reed,32013030-2d30-3033-3034-3732a77a3295,WAS (2013-2013),jordan-reed-te
+J.Ringer,00-0027120,TEN (2009-2010),javon-ringer-rb
+J.Ringer,32013030-2d30-3032-3731-32307352cab7,TEN (2011-2012),javon-ringer-rb
+J.Ross,32013030-2d30-3032-3832-343983130041,"BAL (2015-2015),DET (2013-2014)",jeremy-ross-wr
+J.Ross,32013030-2d30-3033-3334-363047a9bddd,CIN (2017-2018),john-ross-wr
+J.Ryan,00-0023742,"GB (2006-2007),SEA (2009-2010)",jon-ryan-p
+J.Ryan,32013030-2d30-3032-3337-343266a7566f,SEA (2012-2017),jon-ryan-p
+J.Skelton,00-0027754,ARI (2010-2010),john-skelton-qb
+J.Skelton,32013030-2d30-3032-3737-3534c68c3f31,ARI (2011-2012),john-skelton-qb
+J.Smith,00-0015218,JAX (2001-2002),jimmy-smith-wr
+J.Smith,00-0022664,BUF (2004-2005),jonathan-smith-wr
+J.Smith,32013030-2d30-3033-3338-3538ed0401c6,TEN (2019-2019),jonnu-smith-te
+J.Snelling,00-0025631,ATL (2007-2010),jason-snelling-rb
+J.Snelling,32013030-2d30-3032-3536-3331f26a2f13,ATL (2011-2013),jason-snelling-rb
+J.Starks,00-0027791,GB (2010-2010),james-starks-rb
+J.Starks,32013030-2d30-3032-3737-3931a384d490,GB (2011-2016),james-starks-rb
+J.Stewart,00-0015698,"DET (2000-2002),JAX (1999-1999)",james-stewart-rb
+J.Stewart,00-0026153,CAR (2008-2010),jonathan-stewart-rb
+J.Stewart,32013030-2d30-3032-3631-3533a3c6b9c0,"CAR (2011-2017),NYG (2018-2018)",jonathan-stewart-rb
+J.Stewart,32013030-2d30-3032-3934-3431ef11bb17,"DEN (2014-2014),LV (2012-2013)",jeremy-stewart-fb
+J.Tucker,00-0016654,DAL (1999-2000),jason-tucker-wr
+J.Tucker,32013030-2d30-3032-3935-39371b9a6ac1,BAL (2012-2016),justin-tucker-k
+J.Urban,00-0021647,ARI (2008-2008),jerheme-urban-wr
+J.Urban,32013030-2d30-3032-3136-343729454914,KC (2011-2011),jerheme-urban-wr
+J.Vaughan,00-0026644,CAR (2010-2010),josh-vaughan-rb
+J.Vaughan,32013030-2d30-3032-3636-34344abfec42,"ATL (2013-2013),CAR (2011-2011)",josh-vaughan-rb
+J.Webb,00-0024404,KC (2007-2007),jeff-webb-wr
+J.Webb,00-0027796,MIN (2010-2010),joe-webb-qb
+J.Webb,32013030-2d30-3032-3737-393677199f40,"BUF (2017-2017),CAR (2015-2015),MIN (2011-2012)",joe-webb-qb
+J.White,00-0019057,"BAL (2004-2005),CLE (2000-2003),TB (2004-2004)",jamel-white-rb
+J.White,32013030-2d30-3032-3830-37312de943da,BUF (2011-2012),johnny-white-rb
+J.White,32013030-2d30-3033-3130-36325fcd18e3,NE (2014-2019),james-white-rb
+J.Wilkins,00-0017693,LA (2003-2005),jeff-wilkins-k
+J.Wilkins,32013030-2d30-3033-3434-303045986240,IND (2018-2019),jordan-wilkins-rb
+J.Williams,00-0017829,JAX (2000-2000),jermaine-williams-rb
+J.Williams,00-0019491,SEA (2000-2000),james-williams-wr
+J.Williams,00-0027141,KC (2009-2009),javarris-williams-rb
+J.Williams,32013030-2d30-3033-3239-3735f79c2b16,"BUF (2016-2016),IND (2019-2019),NO (2018-2018)",jonathan-williams-rb
+J.Williams,32013030-2d30-3033-3339-3438708d63ec,GB (2017-2019),jamaal-williams-rb
+J.Wright,00-0022288,"ARI (2009-2010),ATL (2004-2004),CLE (2005-2008)",jason-wright-rb
+J.Wright,32013030-2d30-3032-3935-3732c16fcd87,"CAR (2018-2019),MIN (2012-2017)",jarius-wright-wr
+J.Wright,32013030-2d30-3033-3132-3931ed7ee865,CIN (2014-2016),james-wright-wr
+K.Allen,32013030-2d30-3033-3032-3739a5751069,LAC (2017-2019),keenan-allen-wr
+K.Allen,32013030-2d30-3033-3435-37371bc48d7c,CAR (2018-2019),kyle-allen-qb
+K.Bell,00-0026579,CHI (2009-2009),kahlil-bell-rb
+K.Bell,32013030-2d30-3032-3635-373992496a90,CHI (2011-2012),kahlil-bell-rb
+K.Boller,00-0022164,"BAL (2003-2007),LA (2009-2009),LV (2010-2010)",kyle-boller-qb
+K.Boller,32013030-2d30-3032-3231-3634ecb7f7d7,LV (2011-2011),kyle-boller-qb
+K.Carter,00-0002743,"CIN (1999-1999),NO (2003-2004),WAS (2001-2001)",kijana-carter-rb
+K.Carter,00-0021747,SEA (2003-2004),kerry-carter-rb
+K.Clemens,00-0024264,NYJ (2006-2010),kellen-clemens-qb
+K.Clemens,32013030-2d30-3032-3432-36348efd1174,"LA (2011-2013),LAC (2014-2017)",kellen-clemens-qb
+K.Collins,00-0003292,"LV (2004-2005),NYG (1999-2003),TEN (2006-2010)",kerry-collins-qb
+K.Collins,32013030-2d30-3030-3332-3932713f5047,IND (2011-2011),kerry-collins-qb
+K.Faulk,00-0005091,NE (1999-2010),kevin-faulk-rb
+K.Faulk,32013030-2d30-3030-3530-3931d6f1cd7e,NE (2011-2011),kevin-faulk-rb
+K.Huber,00-0027103,CIN (2009-2009),kevin-huber-p
+K.Huber,32013030-2d30-3032-3731-303385b5bb7f,CIN (2012-2013),kevin-huber-p
+K.Johnson,00-0008560,"BAL (2004-2004),CLE (1999-2003)",kevin-johnson-wr
+K.Johnson,00-0008561,"CAR (2006-2006),DAL (2004-2005),NYJ (1999-1999),TB (2000-2000)",keyshawn-johnson-wr
+K.Johnson,00-0021260,DEN (2005-2006),kyle-johnson-rb
+K.Johnson,32013030-2d30-3033-3433-3439ee3def91,DET (2018-2019),kerryon-johnson-rb
+K.Johnson,32013030-2d30-3033-3532-3837d80f030c,ARI (2019-2019),keesean-johnson-wr
+K.Kolb,00-0025423,PHI (2007-2010),kevin-kolb-qb
+K.Kolb,32013030-2d30-3032-3534-32335132798a,ARI (2011-2012),kevin-kolb-qb
+K.Lumpkin,00-0026029,"GB (2008-2008),TB (2010-2010)",kregg-lumpkin-rb
+K.Lumpkin,32013030-2d30-3032-3630-323987cae614,"NYG (2012-2012),TB (2011-2011)",kregg-lumpkin-rb
+K.Moreno,00-0026988,DEN (2009-2010),knowshon-moreno-rb
+K.Moreno,32013030-2d30-3032-3639-38389b7696c5,"DEN (2011-2013),MIA (2014-2014)",knowshon-moreno-rb
+K.Ogletree,00-0026780,DAL (2009-2009),kevin-ogletree-wr
+K.Ogletree,32013030-2d30-3032-3637-38303e4f678e,DAL (2011-2012),kevin-ogletree-wr
+K.Orton,00-0023541,"CHI (2005-2008),DEN (2009-2010)",kyle-orton-qb
+K.Orton,32013030-2d30-3032-3335-34312c37f3ed,"BUF (2014-2014),DAL (2012-2013),DEN (2011-2011),KC (2011-2011)",kyle-orton-qb
+K.Robinson,00-0020490,"GB (2007-2007),MIN (2005-2005),SEA (2001-2008)",koren-robinson-wr
+K.Robinson,32013030-2d30-3033-3033-34382c2ccfd3,"NO (2013-2015),NYJ (2016-2016)",khiry-robinson-rb
+K.Smith,00-0025535,KC (2007-2009),kolby-smith-rb
+K.Smith,00-0026204,DET (2008-2010),kevin-smith-rb
+K.Smith,32013030-2d30-3032-3632-30345f348583,DET (2011-2012),kevin-smith-rb
+K.Smith,32013030-2d30-3033-3039-3638401d13f7,"ATL (2019-2019),DAL (2016-2016),LV (2018-2018)",keith-smith-lb
+K.Toston,00-0027257,LA (2010-2010),keith-toston-rb
+K.Toston,32013030-2d30-3032-3732-35374bd73f95,JAX (2012-2012),keith-toston-rb
+K.Walter,00-0017127,"CAR (2000-2000),NE (2001-2003)",ken-walter-p
+K.Walter,00-0021931,HOU (2006-2009),kevin-walter-wr
+K.Williams,00-0017847,"ARI (2004-2004),TB (2002-2003)",karl-williams-wr
+K.Williams,00-0017860,BUF (1999-1999),kevin-williams-wr
+K.Williams,00-0027214,WAS (2010-2010),keiland-williams-rb
+K.Williams,32013030-2d30-3032-3433-3438f3be748d,BUF (2017-2017),kyle-williams-dt
+K.Williams,32013030-2d30-3032-3732-313427e295d1,DET (2011-2012),keiland-williams-rb
+K.Williams,32013030-2d30-3032-3736-30389bb0417b,SF (2011-2013),kyle-williams-wr
+K.Williams,32013030-2d30-3033-3031-3137b5ee11fb,ARI (2014-2017),kerwynn-williams-rb
+K.Williams,32013030-2d30-3033-3232-353034269ad7,SEA (2015-2015),kasen-williams-wr
+L.Ball,00-0026432,"DEN (2010-2010),IND (2008-2008)",lance-ball-rb
+L.Ball,32013030-2d30-3032-3634-33326bf09118,DEN (2011-2012),lance-ball-rb
+L.Blount,00-0027325,TB (2010-2010),legarrette-blount-rb
+L.Blount,32013030-2d30-3032-3733-3235a70c88f0,"DET (2018-2018),NE (2013-2016),PHI (2017-2017),PIT (2014-2014),TB (2011-2012)",legarrette-blount-rb
+L.Booker,00-0025458,"MIA (2007-2007),PHI (2008-2008)",lorenzo-booker-rb
+L.Booker,32013030-2d30-3032-3534-35386b7b1097,MIN (2011-2011),lorenzo-booker-rb
+L.Fitzgerald,00-0022921,ARI (2004-2006),larry-fitzgerald-wr
+L.Fitzgerald,32013030-2d30-3032-3239-323176c2a1fa,ARI (2013-2018),larry-fitzgerald-wr
+L.Gordon,00-0006155,"BUF (1999-1999),IND (2000-2000)",lennox-gordon-rb
+L.Gordon,00-0021209,"DET (2006-2006),LA (2002-2003),MIA (2004-2004),PHI (2005-2005)",lamar-gordon-rb
+L.Hilliard,00-0026344,MIA (2009-2009),lex-hilliard-rb
+L.Hilliard,32013030-2d30-3032-3633-3434fdb7d19d,"MIA (2011-2011),NE (2012-2012),NYJ (2012-2012)",lex-hilliard-rb
+L.Johnson,00-0008566,NE (1999-2001),lee-johnson-p
+L.Johnson,00-0008568,"CHI (2001-2002),LAC (2003-2003),NYJ (1999-1999)",leon-johnson-rb
+L.Johnson,00-0008570,NYG (1999-1999),leshon-johnson-rb
+L.Johnson,00-0021976,"CIN (2009-2009),KC (2003-2009),WAS (2010-2010)",larry-johnson-rb
+L.Johnson,32013030-2d30-3032-3139-37365d176f27,MIA (2011-2011),larry-johnson-rb
+L.McClain,00-0025524,BAL (2007-2010),leron-mcclain-rb
+L.McClain,32013030-2d30-3032-3535-32343d876048,"KC (2011-2011),LAC (2012-2013)",leron-mcclain-rb
+L.McCown,00-0022864,"CLE (2004-2004),JAX (2009-2010),TB (2007-2008)",luke-mccown-qb
+L.McCown,32013030-2d30-3032-3238-3634afa2a00d,"ATL (2012-2012),JAX (2011-2011),NO (2013-2015)",luke-mccown-qb
+L.McCoy,00-0027029,PHI (2009-2010),lesean-mccoy-rb
+L.McCoy,32013030-2d30-3032-3730-3239509c985a,"BUF (2015-2018),KC (2019-2019),PHI (2011-2014)",lesean-mccoy-rb
+L.Murphy,00-0027089,LV (2009-2010),louis-murphy-wr
+L.Murphy,32013030-2d30-3032-3730-38397727c584,"CAR (2012-2012),LV (2011-2011)",louis-murphy-wr
+L.Naanee,00-0025559,LAC (2009-2010),legedu-naanee-wr
+L.Naanee,32013030-2d30-3032-3535-353930663833,CAR (2011-2011),legedu-naanee-wr
+L.Polite,00-0022405,"DAL (2005-2006),MIA (2008-2010)",lousaka-polite-rb
+L.Polite,32013030-2d30-3032-3234-303545b4bea2,NE (2011-2011),lousaka-polite-rb
+L.Stephens-Howling,00-0026956,ARI (2009-2010),larod-stephens-howling-rb
+L.Stephens-Howling,32013030-2d30-3032-3639-35365e41c308,"ARI (2011-2012),PIT (2013-2013)",larod-stephens-howling-rb
+L.Thomas,32013030-2d30-3033-3132-3630bcfffd57,"ARI (2014-2014),BUF (2018-2018)",logan-thomas-qb
+L.Thomas,32013030-2d30-3033-3237-34308a79018b,NYJ (2017-2017),lawrence-thomas-de
+L.Tomlinson,00-0020536,"LAC (2001-2009),NYJ (2010-2010)",ladanian-tomlinson-rb
+L.Tomlinson,32013030-2d30-3032-3035-3336c45b4434,NYJ (2011-2011),ladanian-tomlinson-rb
+L.Vickers,00-0024394,CLE (2006-2010),lawrence-vickers-fb
+L.Vickers,32013030-2d30-3032-3433-3934562efe4f,"DAL (2012-2012),HOU (2011-2011)",lawrence-vickers-fb
+L.Washington,00-0024332,"NYJ (2006-2009),SEA (2010-2010)",leon-washington-rb
+L.Washington,32013030-2d30-3032-3433-333227e87e5f,"NE (2013-2013),SEA (2011-2012),TEN (2014-2014)",leon-washington-rb
+M.Austin,00-0023921,DAL (2009-2010),miles-austin-wr
+M.Austin,32013030-2d30-3032-3339-32312fc42f27,DAL (2011-2011),miles-austin-wr
+M.Barber,00-0023544,DAL (2005-2010),marion-barber-rb
+M.Barber,32013030-2d30-3032-3335-343490ebdbe3,CHI (2011-2011),marion-barber-rb
+M.Bates,00-0000871,"ARI (1999-1999),DET (2000-2000)",mario-bates-rb
+M.Bates,00-0000872,CAR (1999-2000),michael-bates-rb
+M.Bennett,00-0020514,"KC (2006-2007),LAC (2008-2009),LV (2010-2010),MIN (2001-2005),TB (2007-2008)",michael-bennett-rb
+M.Bennett,32013030-2d30-3032-3632-3031d0233cfe,NE (2016-2016),martellus-bennett-te
+M.Brown,32013030-2d30-3033-3034-303084281ca6,BAL (2013-2013),marlon-brown-wr
+M.Brown,32013030-2d30-3033-3138-30361fd87e06,LA (2015-2019),malcolm-brown-rb
+M.Brown,32013030-2d30-3033-3230-3438484e2634,WAS (2016-2017),mack-brown-rb
+M.Brunell,00-0002110,"JAX (1999-2003),NO (2009-2009),NYJ (2010-2010),WAS (2004-2006)",mark-brunell-qb
+M.Brunell,32013030-2d30-3030-3231-31302960c423,NYJ (2011-2011),mark-brunell-qb
+M.Bush,00-0025487,LV (2008-2010),michael-bush-rb
+M.Bush,32013030-2d30-3032-3534-38377f6a9c9e,"CHI (2012-2013),LV (2011-2011)",michael-bush-rb
+M.Cassel,00-0023662,"KC (2009-2010),NE (2005-2008)",matt-cassel-qb
+M.Cassel,32013030-2d30-3032-3336-3632a25ecc29,"DAL (2015-2015),DET (2018-2018),KC (2011-2012),MIN (2013-2014),TEN (2016-2017)",matt-cassel-qb
+M.Clayton,00-0022725,TB (2004-2009),michael-clayton-wr
+M.Clayton,00-0023457,"BAL (2005-2009),LA (2010-2010)",mark-clayton-wr
+M.Cox,00-0026033,KC (2008-2009),mike-cox-rb
+M.Cox,32013030-2d30-3032-3630-333339c99f6e,ATL (2012-2012),mike-cox-rb
+M.Cox,32013030-2d30-3033-3031-323855421819,NYG (2013-2014),michael-cox-rb
+M.Flynn,00-0026349,GB (2008-2010),matt-flynn-qb
+M.Flynn,32013030-2d30-3032-3633-3439c5e90621,"GB (2011-2014),LV (2013-2013),SEA (2012-2012)",matt-flynn-qb
+M.Forte,00-0026184,CHI (2008-2010),matt-forte-rb
+M.Forte,32013030-2d30-3032-3631-3834b508ba36,"CHI (2011-2015),NYJ (2016-2017)",matt-forte-rb
+M.Goodson,00-0027080,CAR (2009-2010),mike-goodson-rb
+M.Goodson,32013030-2d30-3032-3730-383093b12146,"LV (2012-2012),NYJ (2013-2013)",mike-goodson-rb
+M.Hall,00-0027347,ARI (2010-2010),max-hall-qb
+M.Hall,32013030-2d30-3033-3330-3934949866ca,"ATL (2018-2018),DET (2019-2019)",marvin-hall-wr
+M.Hasselbeck,00-0007091,"GB (1999-2000),SEA (2001-2010)",matt-hasselbeck-qb
+M.Hasselbeck,32013030-2d30-3030-3730-39316c93ae22,"IND (2013-2015),TEN (2011-2012)",matt-hasselbeck-qb
+M.Ingram,32013030-2d30-3032-3739-3636b58ad264,"BAL (2019-2019),NO (2011-2018)",mark-ingram-rb
+M.Ingram,32013030-2d30-3032-3932-34398a3f512c,LAC (2018-2018),melvin-ingram-de
+M.Jenkins,00-0008357,ARI (2000-2002),martay-jenkins-wr
+M.Jenkins,00-0022781,ATL (2004-2006),michael-jenkins-wr
+M.Jennings,00-0021129,NYG (2006-2006),michael-jennings-wr
+M.Jennings,32013030-2d30-3032-3835-3938b3244a87,GB (2013-2013),md-jennings-wr
+M.Johnson,32013030-2d30-3033-3230-36386fe312d1,CLE (2016-2016),malcolm-johnson-fb
+M.Johnson,32013030-2d30-3033-3239-3830c7ad17c3,IND (2018-2018),marcus-johnson-wr
+M.Jones,00-0023456,JAX (2005-2006),matt-jones-wr
+M.Jones,32013030-2d30-3032-3932-3933c267e06d,"CIN (2012-2015),DET (2016-2019)",marvin-jones-wr
+M.Jones,32013030-2d30-3033-3139-33391dc2935b,"IND (2017-2017),WAS (2015-2016)",matt-jones-rb
+M.Jones-Drew,00-0024275,JAX (2006-2010),maurice-jones-drew-rb
+M.Jones-Drew,32013030-2d30-3032-3432-3735b3c09990,"JAX (2011-2013),LV (2014-2014)",maurice-jones-drew-rb
+M.Koenen,00-0023234,ATL (2007-2007),michael-koenen-p
+M.Koenen,32013030-2d30-3032-3332-333472d60074,TB (2013-2013),michael-koenen-p
+M.Leinart,00-0024225,ARI (2006-2009),matt-leinart-qb
+M.Leinart,32013030-2d30-3032-3432-323551485187,"HOU (2011-2011),LV (2012-2012)",matt-leinart-qb
+M.Lewis,00-0009886,NYJ (2000-2000),mo-lewis-lb
+M.Lewis,00-0019600,NO (2002-2003),michael-lewis-wr
+M.Lynch,00-0025399,"BUF (2007-2010),SEA (2010-2010)",marshawn-lynch-rb
+M.Lynch,32013030-2d30-3032-3533-39391f785c8e,"LV (2017-2018),SEA (2011-2019)",marshawn-lynch-rb
+M.Manningham,00-0026235,NYG (2008-2010),mario-manningham-wr
+M.Manningham,32013030-2d30-3032-3632-333572d5c540,SF (2012-2012),mario-manningham-wr
+M.McBriar,00-0021488,DAL (2004-2010),mat-mcbriar-p
+M.McBriar,32013030-2d30-3032-3134-38384dce86c9,PIT (2013-2013),mat-mcbriar-p
+M.Moore,00-0022217,"MIN (2004-2007),PIT (2008-2010)",mewelde-moore-rb
+M.Moore,00-0025708,CAR (2007-2010),matt-moore-qb
+M.Moore,00-0027356,MIA (2010-2010),marlon-moore-wr
+M.Moore,32013030-2d30-3032-3232-31374d91cef8,"IND (2012-2012),PIT (2011-2011)",mewelde-moore-rb
+M.Moore,32013030-2d30-3032-3537-303840077afd,"KC (2019-2019),MIA (2011-2017)",matt-moore-qb
+M.Moore,32013030-2d30-3032-3733-353696732fb8,SF (2013-2013),marlon-moore-wr
+M.Morris,00-0021182,"DET (2009-2010),SEA (2002-2008)",maurice-morris-rb
+M.Morris,32013030-2d30-3032-3131-3832b3b94a99,DET (2011-2011),maurice-morris-rb
+M.Owens,00-0024103,JAX (2008-2009),montell-owens-rb
+M.Owens,32013030-2d30-3032-3431-3033e555ff24,JAX (2011-2012),montell-owens-rb
+M.Reece,00-0026393,LV (2010-2010),marcel-reece-fb
+M.Reece,32013030-2d30-3032-3633-3933e376eca3,"LV (2011-2015),SEA (2016-2016)",marcel-reece-fb
+M.Robinson,00-0013888,CHI (2000-2000),marcus-robinson-wr
+M.Robinson,00-0024315,"SEA (2010-2010),SF (2006-2009)",michael-robinson-fb
+M.Robinson,32013030-2d30-3032-3433-3135951498a9,SEA (2011-2013),michael-robinson-fb
+M.Ryan,00-0026143,ATL (2008-2010),matt-ryan-qb
+M.Ryan,32013030-2d30-3032-3631-34338634c9b6,ATL (2011-2019),matt-ryan-qb
+M.Sanchez,00-0026898,NYJ (2009-2010),mark-sanchez-qb
+M.Sanchez,32013030-2d30-3032-3638-3938d10b93b9,"DAL (2016-2016),NYJ (2011-2012),PHI (2014-2015),WAS (2018-2018)",mark-sanchez-qb
+M.Schaub,00-0022787,"ATL (2004-2006),HOU (2007-2010)",matt-schaub-qb
+M.Schaub,32013030-2d30-3032-3237-3837e8f3d1a2,"ATL (2016-2019),BAL (2015-2015),HOU (2011-2013),LV (2014-2014)",matt-schaub-qb
+M.Slater,00-0026293,NE (2009-2009),matthew-slater-wr
+M.Slater,32013030-2d30-3032-3632-393397ab94ad,NE (2016-2016),matthew-slater-wr
+M.Smith,00-0018977,ATL (2000-2001),maurice-smith-rb
+M.Smith,00-0022130,BAL (2003-2007),musa-smith-rb
+M.Spurlock,00-0023968,"SF (2009-2009),TB (2010-2010)",michael-spurlock-wr
+M.Spurlock,32013030-2d30-3032-3339-3638abb6a923,TB (2011-2011),michael-spurlock-wr
+M.Stafford,00-0026498,DET (2009-2010),matt-stafford-qb
+M.Stafford,32013030-2d30-3032-3634-39382e08c011,DET (2011-2019),matt-stafford-qb
+M.Thomas,00-0027076,JAX (2009-2010),mike-thomas-wr
+M.Thomas,32013030-2d30-3032-3730-3736b9572479,"DET (2012-2012),JAX (2011-2012)",mike-thomas-wr
+M.Thomas,32013030-2d30-3032-3839-3038adb398e6,MIA (2016-2016),michael-thomas-s
+M.Thomas,32013030-2d30-3033-3237-36359afa5261,NO (2019-2019),michael-thomas-wr
+M.Tolbert,00-0026069,LAC (2008-2010),mike-tolbert-rb
+M.Tolbert,32013030-2d30-3032-3630-36396d86b4f7,"BUF (2017-2017),CAR (2012-2016),LAC (2011-2011)",mike-tolbert-rb
+M.Turk,00-0016689,"HOU (2007-2010),LA (2006-2006),MIA (2003-2004),NYJ (2002-2002)",matt-turk-p
+M.Turk,32013030-2d30-3031-3636-3839da153745,JAX (2011-2011),matt-turk-p
+M.Turner,00-0022821,"ATL (2008-2010),LAC (2004-2007)",michael-turner-rb
+M.Turner,32013030-2d30-3032-3238-32311bdd0b54,ATL (2011-2012),michael-turner-rb
+M.Vick,00-0020245,"ATL (2001-2006),PHI (2009-2010)",mike-vick-qb
+M.Vick,32013030-2d30-3032-3032-3435b1d69a2f,"NYJ (2014-2014),PHI (2011-2013),PIT (2015-2015)",mike-vick-qb
+M.Wallace,00-0026901,PIT (2009-2010),mike-wallace-wr
+M.Wallace,32013030-2d30-3032-3639-30312aa87647,"BAL (2016-2017),MIA (2013-2014),MIN (2015-2015),PIT (2011-2012)",mike-wallace-wr
+M.Williams,00-0017892,"BAL (2001-2001),MIN (1999-2005)",moe-williams-rb
+M.Williams,00-0023452,SEA (2010-2010),mike-troy-williams-wr
+M.Williams,32013030-2d30-3032-3737-3032efb067ec,TB (2011-2012),mike-ant-williams-wr
+M.Williams,32013030-2d30-3033-3135-35387ca5d707,BAL (2017-2018),maxx-williams-te
+M.Williams,32013030-2d30-3033-3335-33365840dbf0,LAC (2018-2019),mike-williams-wr
+N.Burleson,00-0021999,"DET (2010-2010),MIN (2004-2005),SEA (2007-2009)",nate-burleson-wr
+N.Burleson,32013030-2d30-3032-3139-3939a15b6bc8,DET (2011-2013),nate-burleson-wr
+N.Harris,00-0020267,DET (2003-2004),nick-harris-p
+N.Harris,32013030-2d30-3032-3032-363734fb87a8,JAX (2011-2011),nick-harris-p
+N.Washington,00-0023367,"PIT (2006-2008),TEN (2009-2010)",nate-washington-wr
+N.Washington,32013030-2d30-3032-3333-3637d0f78987,TEN (2011-2011),nate-washington-wr
+O.Mughelli,00-0022143,"ATL (2007-2010),BAL (2006-2006)",ovie-mughelli-fb
+O.Mughelli,32013030-2d30-3032-3231-3433c686736c,ATL (2011-2011),ovie-mughelli-fb
+O.Schmitt,00-0026303,SEA (2008-2008),owen-schmitt-rb
+O.Schmitt,32013030-2d30-3032-3633-30337c29df81,"LV (2012-2012),PHI (2011-2011)",owen-schmitt-rb
+P.Garcon,00-0026345,IND (2009-2010),pierre-garcon-wr
+P.Garcon,32013030-2d30-3032-3633-34355e779676,"IND (2011-2011),WAS (2012-2014)",pierre-garcon-wr
+P.Harvin,00-0026998,MIN (2009-2010),percy-harvin-wr
+P.Harvin,32013030-2d30-3032-3639-39381fca7917,"BUF (2015-2016),MIN (2011-2012),NYJ (2014-2014),SEA (2013-2014)",percy-harvin-wr
+P.Hillis,00-0026367,"CLE (2010-2010),DEN (2008-2009)",peyton-hillis-rb
+P.Hillis,32013030-2d30-3032-3633-3637e7f101fc,"CLE (2011-2011),KC (2012-2012),NYG (2013-2014)",peyton-hillis-rb
+P.Manning,00-0010346,IND (1999-2010),peyton-manning-qb
+P.Manning,32013030-2d30-3031-3033-3436e2e70d78,DEN (2012-2015),peyton-manning-qb
+P.Parker,00-0027450,TB (2010-2010),preston-parker-wr
+P.Parker,32013030-2d30-3032-3734-35301a3b353a,TB (2011-2012),preston-parker-wr
+P.Rivers,00-0022942,LAC (2004-2010),philip-rivers-qb
+P.Rivers,32013030-2d30-3032-3239-34322bc30020,LAC (2011-2019),philip-rivers-qb
+P.Thomas,00-0024813,NO (2007-2010),pierre-thomas-rb
+P.Thomas,32013030-2d30-3032-3438-3133caab8d39,"NO (2011-2014),SF (2015-2015),WAS (2015-2015)",pierre-thomas-rb
+R.Anderson,00-0000339,"DAL (2003-2004),NYJ (1999-2002)",richie-anderson-fb
+R.Anderson,32013030-2d30-3033-3236-3838f52d40a0,NYJ (2016-2018),robby-anderson-wr
+R.Bartel,00-0025749,ARI (2010-2010),richard-bartel-qb
+R.Bartel,32013030-2d30-3032-3537-3439c7b6a620,ARI (2011-2011),richard-bartel-qb
+R.Brown,00-0002027,SEA (1999-2000),reggie-brown-rb
+R.Brown,00-0023437,MIA (2005-2010),ronnie-brown-rb
+R.Brown,00-0023470,PHI (2005-2009),reggie-brown-wr
+R.Brown,32013030-2d30-3032-3334-33378f0f9181,"HOU (2014-2014),LAC (2012-2014),PHI (2011-2011)",ronnie-brown-rb
+R.Bush,00-0024217,NO (2006-2010),reggie-bush-rb
+R.Bush,32013030-2d30-3032-3432-3137b3342bb5,"BUF (2016-2016),DET (2013-2014),MIA (2011-2012),SF (2015-2015)",reggie-bush-rb
+R.Cartwright,00-0021357,"LV (2010-2010),WAS (2002-2009)",rock-cartwright-fb
+R.Cartwright,32013030-2d30-3032-3133-3537873b62d8,LV (2011-2011),rock-cartwright-fb
+R.Dixon,00-0019662,NYG (2000-2001),ron-dixon-wr
+R.Dixon,32013030-2d30-3033-3239-34334ea2abc5,"DEN (2016-2016),NYG (2018-2019)",riley-dixon-p
+R.Fitzpatrick,00-0023682,"BUF (2009-2010),CIN (2008-2008),LA (2005-2006)",ryan-fitzpatrick-qb
+R.Fitzpatrick,32013030-2d30-3032-3336-3832b8755c76,"BUF (2011-2012),HOU (2014-2014),MIA (2019-2019),NYJ (2015-2016),TB (2017-2018),TEN (2013-2013)",ryan-fitzpatrick-qb
+R.Grant,00-0022984,GB (2007-2010),ryan-grant-rb
+R.Grant,32013030-2d30-3032-3239-3834762d9177,"GB (2011-2012),WAS (2012-2012)",ryan-grant-rb
+R.Griffin III,32013030-2d30-3032-3936-3635a9a33dbc,"BAL (2018-2019),CLE (2016-2016),WAS (2012-2014)",rg3-qb
+R.Griffin III,32013030-2d30-3032-3938-3537a6e41034,TB (2019-2019),rg3-qb
+R.Grossman,00-0022121,"CHI (2003-2008),HOU (2009-2009),WAS (2010-2010)",rex-grossman-qb
+R.Grossman,32013030-2d30-3032-3231-32312bbd6e07,WAS (2011-2011),rex-grossman-qb
+R.Jennings,00-0027155,JAX (2009-2010),rashad-jennings-rb
+R.Jennings,32013030-2d30-3032-3731-35356a426a9d,"JAX (2012-2012),LV (2013-2013),NYG (2014-2016)",rashad-jennings-rb
+R.Johnson,00-0008612,"BUF (1999-2001),LV (2003-2003),TB (2002-2002),WAS (2003-2003)",robert-johnson-qb
+R.Johnson,00-0020407,"CIN (2002-2007),DET (2008-2008)",rudi-johnson-rb
+R.Johnson,32013030-2d30-3032-3730-3637f5ac2814,ARI (2012-2012),rashad-johnson-db
+R.Mathews,00-0027864,LAC (2010-2010),ryan-mathews-rb
+R.Mathews,32013030-2d30-3032-3738-36343277465d,"LAC (2011-2013),PHI (2015-2016)",ryan-mathews-rb
+R.Meachem,00-0025414,NO (2008-2010),robert-meachem-wr
+R.Meachem,32013030-2d30-3032-3534-31344555fa81,"LAC (2012-2012),NO (2011-2013)",robert-meachem-wr
+R.Mendenhall,00-0026163,PIT (2008-2010),rashard-mendenhall-rb
+R.Mendenhall,32013030-2d30-3032-3631-3633fd74de33,"ARI (2013-2013),PIT (2011-2012)",rashard-mendenhall-rb
+R.Rice,00-0026195,BAL (2008-2010),ray-rice-rb
+R.Rice,32013030-2d30-3032-3631-39352f1e2853,BAL (2011-2013),ray-rice-rb
+R.Smith,00-0015286,MIN (1999-2000),robert-smith-rb
+R.Smith,00-0015290,DEN (1999-2006),rod-smith-wr
+R.Smith,00-0027775,TEN (2010-2010),rusty-smith-qb
+R.Smith,32013030-2d30-3032-3737-37351d26fba2,TEN (2012-2012),rusty-smith-qb
+R.Smith,32013030-2d30-3033-3139-30301bd7b033,"DAL (2017-2018),SEA (2015-2015)",rod-smith-rb
+R.Thomas,00-0016316,DAL (1999-2002),robert-thomas-fb
+R.Thomas,00-0016321,"ATL (2001-2001),TEN (1999-2000)",rodney-thomas-rb
+R.Thomas,32013030-2d30-3033-3432-3231406fcf97,MIN (2018-2018),roc-thomas-rb
+R.Torain,00-0026279,"DEN (2008-2008),WAS (2010-2010)",ryan-torain-rb
+R.Torain,32013030-2d30-3032-3632-37398889d4ce,WAS (2011-2011),ryan-torain-rb
+R.Wayne,00-0020498,IND (2004-2009),reggie-wayne-wr
+R.Wayne,32013030-2d30-3032-3034-3938af93005c,IND (2012-2013),reggie-wayne-wr
+R.Williams,00-0017915,"MIA (2002-2010),NO (1999-2001)",ricky-williams-rb
+R.Williams,00-0017923,NYG (2001-2001),rodney-williams-p
+R.Williams,00-0019919,DAL (2004-2004),randal-williams-wr
+R.Williams,00-0020739,IND (2002-2003),fake-ricky-williams-rb
+R.Williams,00-0022889,JAX (2005-2008),reggie-williams-wr
+R.Williams,00-0022909,"DAL (2008-2008),DET (2004-2007)",roy-williams-wr
+R.Williams,00-0023570,TEN (2007-2007),roydell-williams-wr
+R.Williams,32013030-2d30-3031-3739-3135ce63f577,BAL (2011-2011),ricky-williams-rb
+R.Williams,32013030-2d30-3032-3739-37366b9828a7,ARI (2012-2012),ryan-williams-rb
+S.Bradford,00-0027854,LA (2010-2010),sam-bradford-qb
+S.Bradford,32013030-2d30-3032-3738-353448d0b06c,"ARI (2018-2018),LA (2011-2013),MIN (2016-2017),PHI (2015-2015)",sam-bradford-qb
+S.Breaston,00-0025529,ARI (2007-2010),steve-breaston-wr
+S.Breaston,32013030-2d30-3032-3535-3239379e0cce,KC (2011-2011),steve-breaston-wr
+S.Greene,00-0026899,NYJ (2009-2010),shonn-greene-rb
+S.Greene,32013030-2d30-3032-3638-39394cc5f3ac,"NYJ (2011-2012),TEN (2013-2014)",shonn-greene-rb
+S.Hill,00-0020679,"DET (2010-2010),MIN (2005-2005),SF (2007-2009)",shaun-hill-qb
+S.Hill,32013030-2d30-3032-3036-3739dd380a34,"DET (2011-2013),LA (2014-2014),MIN (2015-2016)",shaun-hill-qb
+S.Holmes,00-0024240,"NYJ (2010-2010),PIT (2006-2009)",santonio-holmes-wr
+S.Holmes,32013030-2d30-3032-3432-3430a333b161,NYJ (2011-2011),santonio-holmes-wr
+S.Jackson,00-0022736,LA (2004-2010),steven-jackson-rb
+S.Jackson,32013030-2d30-3032-3237-3336d84a194c,"ATL (2013-2014),LA (2011-2012),NE (2015-2015)",steven-jackson-rb
+S.Johnson,32013030-2d30-3032-3633-36349e542240,BUF (2013-2013),steve-johnson-wr
+S.Johnson,32013030-2d30-3033-3132-343380099f0f,JAX (2014-2014),storm-johnson-rb
+S.Koch,00-0024417,BAL (2008-2010),sam-koch-p
+S.Koch,32013030-2d30-3032-3434-31371043198a,BAL (2011-2019),sam-koch-p
+S.Larsen,00-0026323,DEN (2010-2010),spencer-larsen-fb
+S.Larsen,32013030-2d30-3032-3633-323314713487,DEN (2011-2011),spencer-larsen-fb
+S.Lechler,00-0019714,LV (2001-2008),shane-lechler-p
+S.Lechler,32013030-2d30-3031-3937-31345bd2fef8,"HOU (2014-2014),LV (2011-2012)",shane-lechler-p
+S.Logan,00-0026491,DET (2010-2010),stefan-logan-rb
+S.Logan,32013030-2d30-3032-3634-393188898c73,DET (2011-2012),stefan-logan-rb
+S.McGee,00-0027071,DAL (2010-2010),stephen-mcgee-qb
+S.McGee,32013030-2d30-3032-3730-37311da2a010,DAL (2011-2011),stephen-mcgee-qb
+S.Morris,00-0019484,"BUF (2000-2003),MIA (2004-2006),NE (2007-2010)",sammy-morris-rb
+S.Morris,00-0019726,KC (2000-2000),sylvester-morris-wr
+S.Morris,32013030-2d30-3031-3934-3834ae9192ef,DAL (2011-2011),sammy-morris-rb
+S.Moss,00-0020494,"NYJ (2001-2004),WAS (2005-2010)",santana-moss-wr
+S.Moss,00-0024259,NYG (2007-2007),sinorice-moss-wr
+S.Moss,32013030-2d30-3032-3034-3934f47a0f80,WAS (2012-2013),santana-moss-wr
+S.Rice,00-0025431,MIN (2007-2009),sidney-rice-wr
+S.Rice,32013030-2d30-3032-3534-333139b89012,SEA (2011-2012),sidney-rice-wr
+S.Slaton,00-0026229,HOU (2008-2010),steve-slaton-rb
+S.Slaton,32013030-2d30-3032-3632-3239c1fc57e5,"HOU (2011-2011),MIA (2011-2011)",steve-slaton-rb
+S.Smith,00-0020337,CAR (2001-2010),steve-smith-wr
+S.Smith,00-0021679,KC (2010-2010),shaun-smith-de
+S.Smith,32013030-2d30-3032-3033-3337ff38c404,CAR (2011-2012),steve-smith-wr
+S.Wallace,00-0022055,"CLE (2010-2010),SEA (2005-2009)",seneca-wallace-qb
+S.Wallace,32013030-2d30-3032-3230-353563e50f54,"CLE (2011-2011),GB (2013-2013)",seneca-wallace-qb
+S.Weatherford,00-0024110,"NO (2006-2007),NYJ (2009-2010)",steve-weatherford-p
+S.Weatherford,32013030-2d30-3032-3431-3130266dfb5f,NYG (2011-2014),steve-weatherford-p
+S.Wynn,00-0019553,"CLE (2000-2000),MIN (2001-2001)",spergon-wynn-qb
+S.Wynn,32013030-2d30-3033-3136-383491e06148,JAX (2016-2016),shane-wynn-wr
+S.Young,00-0018441,SF (1999-1999),steve-young-qb
+S.Young,00-0024549,DEN (2007-2008),selvin-young-rb
+T.Banks,00-0000721,JAX (1999-1999),tavian-banks-rb
+T.Banks,00-0000722,"BAL (1999-2000),HOU (2003-2005),WAS (2001-2001)",tony-banks-qb
+T.Brady,00-0019596,NE (2000-2010),tom-brady-qb
+T.Brady,32013030-2d30-3031-3935-39361b587621,NE (2011-2019),tom-brady-qb
+T.Brown,00-0002058,LV (1999-2002),tim-brown-wr
+T.Brown,00-0002068,NE (1999-2006),troy-brown-wr
+T.Brown,00-0019192,"BUF (2001-2003),SEA (2000-2000)",travis-brown-qb
+T.Carter,00-0002713,"DEN (2001-2001),NE (1999-2000)",tony-carter-rb
+T.Carter,00-0021174,NYG (2002-2005),tim-carter-wr
+T.Choice,00-0026262,DAL (2008-2010),tashard-choice-rb
+T.Choice,32013030-2d30-3032-3632-3632e19db5d2,"BUF (2011-2013),DAL (2011-2011),IND (2013-2013),WAS (2011-2011)",tashard-choice-rb
+T.Clayton,00-0025573,"CLE (2010-2010),NE (2010-2010)",thomas-clayton-rb
+T.Clayton,32013030-2d30-3032-3535-37332fd4e088,CLE (2011-2011),thomas-clayton-rb
+T.Copper,00-0022388,"DAL (2004-2004),NO (2006-2006)",terrance-copper-wr
+T.Copper,32013030-2d30-3032-3233-38385865b6b7,KC (2012-2012),terrance-copper-wr
+T.Davis,00-0004054,"DEN (1999-2001),LV (2000-2000)",terrell-davis-rb
+T.Davis,00-0004060,NO (1999-1999),troy-davis-rb
+T.Davis,32013030-2d30-3033-3234-3233fd9558ed,"GB (2017-2017),LV (2019-2019)",trevor-davis-wr
+T.Edwards,00-0004780,"JAX (2003-2004),LA (2002-2002),PIT (2000-2001)",troy-edwards-wr
+T.Edwards,00-0025479,"BUF (2007-2010),JAX (2010-2010)",trent-edwards-qb
+T.Edwards,32013030-2d30-3032-3534-37392cb6f6b5,PHI (2012-2012),trent-edwards-qb
+T.Fiammetta,00-0027093,CAR (2010-2010),tony-fiammetta-rb
+T.Fiammetta,32013030-2d30-3032-3730-3933f27bc2e5,DAL (2011-2011),tony-fiammetta-rb
+T.Gerhart,00-0027888,MIN (2010-2010),toby-gerhart-rb
+T.Gerhart,32013030-2d30-3032-3738-3838cc6ba969,"JAX (2014-2015),MIN (2011-2013)",toby-gerhart-rb
+T.Ginn,00-0025396,"MIA (2007-2009),SF (2010-2010)",ted-ginn-wr
+T.Ginn,32013030-2d30-3032-3533-39365de71765,"ARI (2014-2014),CAR (2013-2016),NO (2017-2019),SF (2011-2012)",ted-ginn-wr
+T.Green,00-0006355,"KC (2001-2006),LA (2000-2008),MIA (2007-2007)",trent-green-qb
+T.Green,32013030-2d30-3033-3337-34382144b153,DET (2017-2017),tion-green-rb
+T.Hightower,00-0026289,ARI (2008-2010),tim-hightower-rb
+T.Hightower,32013030-2d30-3032-3632-383949fd08b2,"NO (2015-2016),WAS (2011-2011)",tim-hightower-rb
+T.Hill,32013030-2d30-3033-3330-3430e890f1ff,KC (2016-2019),tyreek-hill-wr
+T.Hill,32013030-2d30-3033-3333-3537640eb4b6,NO (2018-2019),taysom-hill-qb
+T.Jackson,00-0008196,SF (1999-2005),terry-jackson-fb
+T.Jackson,00-0024279,MIN (2006-2010),tavaris-jackson-qb
+T.Jackson,32013030-2d30-3032-3432-3739b877b9f7,SEA (2011-2015),tavaris-jackson-qb
+T.Jones,00-0019641,"ARI (2000-2002),CHI (2004-2006),KC (2010-2010),NYJ (2007-2009),TB (2003-2003)",thomas-jones-rb
+T.Jones,32013030-2d30-3031-3936-3431c06ee897,KC (2011-2011),thomas-jones-rb
+T.Jones,32013030-2d30-3032-3830-363385ab36a6,"HOU (2019-2019),LV (2011-2016)",taiwan-jones-rb
+T.Jones,32013030-2d30-3033-3131-3839f418b93f,DET (2015-2015),tj-jones-wr
+T.Lewis,32013030-2d30-3032-3732-3533fd5f4171,"BUF (2013-2013),CLE (2012-2012)",thad-lewis-qb
+T.Lewis,32013030-2d30-3033-3238-38314f049bd7,NO (2016-2018),tommylee-lewis-wr
+T.Martin,00-0010477,MIA (1999-2000),tony-martin-wr
+T.Martin,00-0019633,"LV (2003-2003),PIT (2001-2001)",tee-martin-qb
+T.Palko,00-0024812,KC (2010-2010),tyler-palko-qb
+T.Palko,32013030-2d30-3032-3438-313278fa973a,KC (2011-2011),tyler-palko-qb
+T.Richardson,00-0013694,"KC (1999-2005),MIN (2006-2007),NYJ (2008-2010)",tony-richardson-fb
+T.Richardson,32013030-2d30-3032-3936-3735c7235094,"CLE (2012-2013),IND (2013-2014)",trent-richardson-rb
+T.Romo,00-0021678,DAL (2005-2010),tony-romo-qb
+T.Romo,32013030-2d30-3032-3136-37385976e857,DAL (2011-2016),tony-romo-qb
+T.Scheffler,00-0024276,DEN (2006-2008),tony-scheffler-te
+T.Scheffler,32013030-2d30-3032-3432-37365a84e63e,DET (2011-2011),tony-scheffler-te
+T.Smith,00-0019587,"ARI (2007-2008),CLE (2004-2006),NO (2000-2002)",terrelle-smith-fb
+T.Smith,00-0025561,"BAL (2007-2009),SF (2010-2010)",troy-smith-qb
+T.Smith,32013030-2d30-3032-3739-393641e0521b,"BAL (2011-2012),PHI (2017-2017)",torrey-smith-wr
+T.Smith,32013030-2d30-3033-3437-363565d42bf8,NO (2018-2018),trequan-smith-wr
+T.Taylor,00-0019721,"BAL (2000-2003),MIN (2005-2006)",travis-taylor-wr
+T.Taylor,00-0020112,DAL (2001-2001),tony-taylor-rb
+T.Taylor,32013030-2d30-3032-3831-3138b775ef66,"BAL (2011-2014),BUF (2015-2017),CLE (2018-2018),LAC (2019-2019)",tyrod-taylor-qb
+T.Taylor,32013030-2d30-3033-3339-3131fdbe6402,TEN (2017-2017),taywan-taylor-wr
+T.Tebow,00-0027876,DEN (2010-2010),tim-tebow-qb
+T.Tebow,32013030-2d30-3032-3738-37367f80ade6,"DEN (2011-2011),NYJ (2012-2012)",tim-tebow-qb
+T.Thigpen,00-0025604,"KC (2007-2009),MIA (2009-2010)",tyler-thigpen-qb
+T.Thigpen,32013030-2d30-3032-3536-303461c70703,BUF (2011-2012),tyler-thigpen-qb
+T.Williams,00-0023761,ATL (2007-2007),travis-williams-lb
+T.Williams,32013030-2d30-3033-3035-34325fb24f9d,DAL (2013-2017),terrence-williams-wr
+T.Williams,32013030-2d30-3033-3135-3331c36a3b0a,IND (2015-2015),trey-williams-rb
+V.Davis,00-0024221,SF (2006-2008),vernon-davis-te
+V.Davis,32013030-2d30-3032-3432-3231bd4de2d9,SF (2011-2014),vernon-davis-te
+V.Jackson,00-0023496,LAC (2006-2010),vincent-jackson-wr
+V.Jackson,32013030-2d30-3032-3334-39361c063abc,"LAC (2011-2011),TB (2013-2013)",vincent-jackson-wr
+V.Leach,00-0022397,HOU (2007-2008),vonta-leach-rb
+V.Leach,32013030-2d30-3032-3233-3937a45074ba,BAL (2011-2013),vonta-leach-rb
+V.Young,00-0024218,TEN (2006-2010),vince-young-qb
+V.Young,32013030-2d30-3032-3432-3138bc3430d9,PHI (2011-2011),vince-young-qb
+W.McGahee,00-0022178,"BAL (2007-2010),BUF (2004-2006)",willis-mcgahee-rb
+W.McGahee,32013030-2d30-3032-3231-3738f30af1ce,"CLE (2013-2013),DEN (2011-2012)",willis-mcgahee-rb
+W.Welker,00-0022427,"MIA (2005-2005),NE (2007-2009)",wes-welker-wr
+W.Welker,32013030-2d30-3032-3234-3237c5d6fb3d,NE (2011-2012),wes-welker-wr
