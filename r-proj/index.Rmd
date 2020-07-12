@@ -7,3 +7,18 @@ This is my R-Markdown based website where I host short reports I create using NF
 #### Analyses
 
 1. [Clutch QBs](clutch_qbs.html)
+
+
+#### Plots
+
+Below are some standalone plots presented without a wider analysis.
+
+
+The following interactive plots of QB EPA from nflfastR cover all players with more than 1000 plays and at least 60% passes, as well as any player with  more than 400 plays and at least 60% passes and their first game within the last 2 seasons. 
+
+- [**All Time QB EPA**](plots/all_time_qb_epa.html) - measures cumulative QB EPA on a gameweek basis since the start of nflfastR data (1999)
+
+- [**Career QB EPA**](plots/career_span_qb_epa.html) - measures cumulative QB EPA on a gameweek basis since a players first game
+
+- [**Games Played QB EPA**](plots/games_played_qb_epa.html) - measures cumulative QB EPA for every game that a player has at least 1 play in
+
