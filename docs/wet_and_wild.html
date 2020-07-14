@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Arthur Gymer" />
+
+
+<title>Quick &amp; Dirty Wet &amp; Wild</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">NFL Analytics</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Quick &amp; Dirty Wet &amp; Wild</h1>
+<h4 class="author">Arthur Gymer</h4>
+<h4 class="date">14/07/2020</h4>
+
+</div>
+
+
+<p>Last updated: 2020-07-15 00:08:42</p>
+<div id="a-first-look-at-nflfastr-data-with-weather-data" class="section level2">
+<h2>A First Look At nflfastR Data With Weather Data</h2>
+<p>A few days ago Tom Bliss (<a href="https://twitter.com/DataWithBliss">@DataWithBliss</a>) and Michael Lopez (<a href="https://twitter.com/StatsbyLopez">@StatsbyLopez</a>) released some weather data for NFL games dating back to 2000. I decided this would be a good opportunity to jump back into looking at the play-by-play data from <a href="https://github.com/mrcaseb/nflfastR/"><code>nflfastR</code></a>.</p>
+<div id="merging-and-cleaning-the-data" class="section level3">
+<h3>Merging and Cleaning the Data</h3>
+<p>The weather data provided is keyed by the old style NFL API game ids and UTC time and is roughly hourly on the day of the match. Off the bat I figured this was simply going to be a case of joining the two datasets and rolling weather observations backwards or forwards to the for each play. So I loaded up both datasets and … DAMN. The <code>nflfastR</code> data has KO time and date but at a play-by-play level there is only game clock time available. Unfortunately unlike football, or to a lesser extent rugby, an American football game doesn’t have an almost continuously running clock which roughly allows real time to be calculated given KO time and game time. Back to the drawing board.</p>
+<p>As you may know <code>nflfastR</code> pulls from the NFL API which recently changed quiteb significantly and I recalled that someone remarked that there were different/new variables now available. So I took a quick look at the raw data from the new API and low and behold there is a <code>timeOfDay</code> variable avaialble giving the realtime in UTC. WE ARE BACK IN BUSINESS. So now we are only working with data from 2011 onwards. I used some <a href="https://github.com/awgymer/nfl-analysis/tree/master/python-code/extract_play_times.py">very basic python</a> to scrape out the <code>timeOfDay</code>, <code>play_id</code>, and <code>game_id</code> to allow me to join the pbp data to the times.</p>
+<pre class="r"><code># Load data from local SQLite DB
+connection &lt;- DBI::dbConnect(RSQLite::SQLite(), &quot;../db/pbp_db&quot;)
+pbp &lt;- as.data.table(DBI::dbReadTable(connection, &#39;nflfastR_pbp&#39;))
+DBI::dbDisconnect(connection)
+
+# Only want 2011 onwards
+pbp &lt;- pbp[season &gt;= 2011]
+# Load and merge in the play times.
+playtimes &lt;- fread(&#39;../data/play_realtimes.csv&#39;)
+pbp[playtimes, real_time:=i.real_time,on=c(nfl_api_id=&#39;game_id&#39;, play_id=&#39;play_id&#39;)]</code></pre>
+<p>So now we have play by play data with real time for each play. Unfortnately it isn’t that simple. The <code>timeOfDay</code> variable is only the UTC time and although we have the date of the game some late games can run over two calendar dates in UTC time which we need to join with the weather data.</p>
+<p>The solution is to use the starting date and time in UTC, convert the real times to full datetimes using the game date, and then adjust the date where games have clearly crossed over into the next day.</p>
+<pre class="r"><code># Get the starting datetime as UTC
+pbp[,utc_start:=lubridate::as_datetime(paste(game_date, start_time), format=&quot;%Y-%m-%d %H:%M:%S&quot;, tz=&#39;America/New_York&#39;)]
+# Convert valid real times to actual datetimes
+pbp[
+  !is.na(real_time) &amp; real_time != &#39;&#39;, 
+  real_datetime:=lubridate::as_datetime(paste(game_date, real_time), format=&quot;%Y-%m-%d %H:%M:%S&quot;, tz=&#39;UTC&#39;)
+]
+# Fill the missing datetimes from the next or last available.
+# Seems to affect first and last plays of games so need to do both
+pbp[,real_datetime:=nafill(real_datetime, &#39;nocb&#39;),by=game_id]
+pbp[,real_datetime:=nafill(real_datetime, &#39;locf&#39;),by=game_id]
+# Adjust date forward one day if the real datetime is earlier than the real starttime
+# caused by games that span multiple calendar days in UTC time
+pbp[utc_start &gt; real_datetime, real_datetime:=real_datetime + lubridate::days(1)]</code></pre>
+<p>Excellent. We now finally have real UTC datetimes for all plays since 2011.</p>
+<p>Now let’s look at the weather data. The times are in local time but the UTC offset is provided in the weather repo <code>games.csv</code> so we can join these and calculate the real UTC time easily. Whilst we are cleaning the weather data we also pull in the new style game ids from Lee Sharpe’s <code>games.csv</code> to allow us to join easily with the <code>nflfastR</code> data.</p>
+<pre class="r"><code>gms &lt;- fread(&#39;http://www.habitatring.com/games.csv&#39;)
+weatherdat &lt;- fread(&#39;https://raw.githubusercontent.com/ThompsonJamesBliss/WeatherData/master/data/games_weather.csv&#39;)
+weathergms &lt;- fread(&#39;https://raw.githubusercontent.com/ThompsonJamesBliss/WeatherData/master/data/games.csv&#39;)
+#Add TZoffset to the full weather data set
+weatherdat[weathergms, tzoffset:=i.TZOffset,on=&#39;game_id&#39;]
+#Join with Lee Sharpe&#39;s games CSV to get the new style game_id used by nflfastR
+weatherdat[gms, new_game_id:=i.game_id, on=c(game_id=&#39;old_game_id&#39;)]
+#Create a proper datetime column with the correct UTC offset adjustment 
+weatherdat[, utc_time:=lubridate::as_datetime(TimeMeasure, format=&#39;%m/%d/%Y %H:%M&#39;, tz=&#39;UTC&#39;)]
+# Closing brackets help with returning the correct result
+# https://cran.r-project.org/web/packages/data.table/vignettes/datatable-faq.html#why-do-i-have-to-type-dt-sometimes-twice-after-using-to-print-the-result-to-console
+weatherdat[, utc_time:=utc_time - lubridate::hours(tzoffset)]</code></pre>
+<p>Ok, let’s now join the data using a rolling join to pull from the nearest time where there’s not an exact match. We can also check how complete our weather data is.</p>
+<pre class="r"><code>with_weather &lt;- weatherdat[pbp, on=c(new_game_id=&#39;game_id&#39;, utc_time=&#39;real_datetime&#39;), nomatch=NULL, roll=&#39;nearest&#39;]
+# Check if any windspeed values are NA
+with_weather[is.na(WindSpeed), .N]</code></pre>
+<pre><code>## [1] 0</code></pre>
+<pre class="r"><code># Check if any windspeed values are NA
+with_weather[is.na(Temperature), .N]</code></pre>
+<pre><code>## [1] 0</code></pre>
+<pre class="r"><code># Check if any precipitation values are NA
+with_weather[is.na(Precipitation), .N]</code></pre>
+<pre><code>## [1] 24978</code></pre>
+<pre class="r"><code># Check if any estimated condition values are NA 
+with_weather[is.na(EstimatedCondition), .N]</code></pre>
+<pre><code>## [1] 24978</code></pre>
+<p>The most useful weather columns are likely to be <code>WindSpeed</code>, <code>Temperature</code>, <code>Precipitation</code>, and <code>EstimatedCondition</code>. It seems all out plays have wind and temperature information but 24978 plays out of 435267 are missing precipitation and condition data; the fact they are the same number suggests its the same rows but we’ll check that anyway. We can also do some further digging to see if the <code>NA</code> values are random or affect only some games.</p>
+<pre class="r"><code># Check if the NA rows for precipitation and Estimated condition are the same 
+with_weather[is.na(Precipitation) &amp; is.na(EstimatedCondition), .N,]</code></pre>
+<pre><code>## [1] 24978</code></pre>
+<pre class="r"><code># Check how many games are NA and of those how many are all NA
+with_weather[, .(na_pct=sum(is.na(Precipitation))/.N), by=game_id][na_pct!=0][,.N,by=na_pct==1]</code></pre>
+<pre><code>##    na_pct   N
+## 1:   TRUE  29
+## 2:  FALSE 266</code></pre>
+<p>So we have 295 games with some level of <code>NA</code> weather data, of which 29 have no non-NA values. Let’s see where those games are.</p>
+<pre class="r"><code>with_weather[, .(na_pct=sum(is.na(Precipitation))/.N), by=game_id][na_pct==1][gms, on=.(game_id=old_game_id),nomatch=NULL][,.N,by=stadium][order(-N)]</code></pre>
+<pre><code>##               stadium  N
+## 1:    Wembley Stadium 14
+## 2:        Heinz Field  9
+## 3: Twickenham Stadium  3
+## 4:     Azteca Stadium  2
+## 5:      Rogers Centre  1</code></pre>
+<p>So most of the games with all <code>NA</code> data are at Wembley. That seems likely to be an issue with that weather station.</p>
+<p>I strongly considered filling these values with data rolled from the next nearest available time slot, but ultimately I decided to exclude any plays with an <code>NA</code> from analysis involving preciptiation/condition at this point since, as <a href="https://www.datawithbliss.com/weather-data#cleaning-the-weather-data">Tom explains</a> even a less crude linear interpolation isn’t well suited to infilling precipitation. It might be better to exclude any games with any <code>NA</code> entirely, but this is just supposed to be a quick and dirty look at the data so I’m not going to worry about that for now.</p>
+</div>
+<div id="passrun-tendencies" class="section level3">
+<h3>Pass/Run Tendencies</h3>
+<p>First I wanted to look at whether the weather appears to affect a teams playcalling. We already have some bins for the condition based on precipitation but I also want to create some for wind speed and temperature too.</p>
+<div id="windspeed" class="section level5">
+<h5>Windspeed</h5>
+<p><img src="wet_and_wild_files/figure-html/windspeed-plt-1.png" width="672" /></p>
+<p>So we appear to have a slight reduction in passing when it gets <em>REALLY</em> windy, however it’s worth noting that over 30mph the sample sizes are very small.</p>
+</div>
+<div id="temperature" class="section level5">
+<h5>Temperature</h5>
+<p><img src="wet_and_wild_files/figure-html/temp-plot-1.png" width="672" /></p>
+<p>Once again we seem to see a reduction in passing at the extremes. For sub-zero temperatures the sample sizes are very small, and although they are larger at the very warm end they are still considerably smaller than the bulk of the bins.</p>
+</div>
+<div id="precipitation" class="section level5">
+<h5>Precipitation</h5>
+<p><img src="wet_and_wild_files/figure-html/precip-plot-1.png" width="672" /></p>
+<p>It’s a similar story again with precipitation levels. It seems that we get a reduction in passing volume as the rain increases, but once again the sample sizes for anything other than <code>Clear</code> or <code>Light Rain</code> are considerably reduced.</p>
+<p>So it seems like there might be a slight impact on playcalling but small sample sizes for inclement weather make it hard to draw any serious conclusion.</p>
+</div>
+</div>
+<div id="success-rate" class="section level3">
+<h3>Success Rate</h3>
+<p>So there might be a slight reduction in passing in inclement weather but do passing and rushing success see any change in differing conditions?</p>
+<div id="windspeed-1" class="section level5">
+<h5>Windspeed</h5>
+<p><img src="wet_and_wild_files/figure-html/windspeed-success-1.png" width="672" /></p>
+<p>It looks like a definite drop in passing success rate when the wind picks up. As expected the wind has no effect on rushing success, but it’s interesting to note that the success rate for rushing appears higher than in a dome.</p>
+</div>
+<div id="temperature-1" class="section level5">
+<h5>Temperature</h5>
+<p><img src="wet_and_wild_files/figure-html/temp-success-1.png" width="672" /></p>
+<p>So as it gets warmer we appear to see an increase in passing success rate and a reduction in rushing success rate. Do those big backs wear out quicker in the heat? Who knows.</p>
+</div>
+<div id="precipitation-1" class="section level5">
+<h5>Precipitation</h5>
+<p><img src="wet_and_wild_files/figure-html/precip-success-1.png" width="672" /></p>
+<p>Well, well, well. It looks like a downpour might be the thing to really put the dampners on the passing game. However in reality the sample sizes for passing in heavy rain are so small that drawing any real conclusion is a fools errand, as evidenced by the wide confidence interval.</p>
+</div>
+</div>
+<div id="completion-percentage" class="section level3">
+<h3>Completion Percentage</h3>
+<div id="windspeed-2" class="section level5">
+<h5>Windspeed</h5>
+<p><img src="wet_and_wild_files/figure-html/windspeed-comp-pct-1.png" width="672" /></p>
+<p>So high winds do seem to reduce the completion percentage but as well as the previous caveats about small sample sizes it should be considered that all the other variables known to affect completion percentage are being ignored here. It might be that increased wind is disproportionately affecting the completion of longer passes for example.</p>
+</div>
+<div id="temperature-2" class="section level5">
+<h5>Temperature</h5>
+<p><img src="wet_and_wild_files/figure-html/temp-comp-pct-1.png" width="672" /></p>
+<p>There seems to be a pretty strong correlation between completion percentage and temperature. Cold hard balls and stiff fingers make for a bad combination perhaps?</p>
+</div>
+<div id="precipitation-2" class="section level5">
+<h5>Precipitation</h5>
+<p><img src="wet_and_wild_files/figure-html/precip-comp-pct-1.png" width="672" /></p>
+<p>What on earth. So completion percentage goes up in the heaviest rain? Probably not, it’s much more likely down to very small sample sizes but it could be an example of not accounting for other known factors in completion percentage causing odd results - perhaps in heavy rain teams opt to make more shorter, safer passes?</p>
+</div>
+</div>
+<div id="conclusion" class="section level3">
+<h3>Conclusion</h3>
+<p>There is definitely some insights to be drawn from weather data linked to play-by-play data. However linking data closely with regards to time is tricky and only easily possible with a small subset of the overall data and missing values make this harder. Missing values may also be an issue in using such data in any modelling.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("show" === "show");
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

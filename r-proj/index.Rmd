@@ -7,7 +7,7 @@ This is my R-Markdown based website where I host short reports I create using NF
 #### Analyses
 
 1. [Clutch QBs](clutch_qbs.html)
-
+2. [NFL PBP & Weather](wet_and_wild.html)
 
 #### Plots
 

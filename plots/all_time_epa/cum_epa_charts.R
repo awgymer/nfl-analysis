@@ -32,59 +32,7 @@ topplayers <- player_plays[(totplays > 1000 & totpass > 600) |
                              (totpass / totplays > 0.6 & totplays > 400 & first_gkey > 399),]
 
 weekly_tops <- weekly_epa[topplayers, on = 'joinid']
-
-p <- plot_ly() %>%
-  add_trace(
-    type = "scattergl",
-    mode = "lines",
-    line = list(shape = 'vh'),
-    data = weekly_tops[career_stop == 1, ],
-    x =  ~ gkey,
-    y =  ~ cum_epa,
-    color = ~ I(col1),
-    text =  ~ label,
-    hoverinfo = 'text',
-    split =  ~ commname,
-    legendgroup =  ~ commname
-  )
-
-for (i in seq(2, max(weekly_tops[['career_stop']]))) {
-  p <- p %>%
-    add_trace(
-      type = "scattergl",
-      mode = "lines",
-      line = list(shape = 'vh'),
-      data = weekly_tops[career_stop == i, ],
-      x =  ~ gkey,
-      y =  ~ cum_epa,
-      color = ~ I(col1),
-      text =  ~ label,
-      hoverinfo = 'text',
-      split =  ~ commname,
-      legendgroup =  ~ commname,
-      showlegend = F
-    )
-}
-
-seasons <- unique(weekly_epa[['season']])
-tickvals <- seq(1, max(weekly_epa[['gkey']]), 21)
-
-p %>%
-  layout(
-    title = list(text = "Career Cumulative QB EPA (incl. playoffs)"),
-    xaxis = list(title = list(text = "'NFL Seasons -->'"), tickvals = tickvals, ticktext = seasons),
-    yaxis = list(title = list(text = "Cumulative QB EPA")),
-    modebar = list(orientation = 'v')
-  ) %>% 
-  config(
-    modeBarButtonsToRemove = c(
-      'hoverCompareCartesian', 
-      'hoverClosestCartesian', 
-      'lasso2d', 
-      'select2d', 
-      'toggleSpikelines'
-    )
-  )
+fwrite(weekly_tops, 'data/weekly_epa_2019_top_players.csv')
 
 
 qbs_04_dat <-
@@ -96,8 +44,9 @@ qbs_04 <- ggplot(qbs_04_dat,
                                                                 cum_epa + 10, label = commname)) +
   ggthemes::scale_color_economist(guide = F) +
   labs(title = "Cumulative QB EPA (incl. Playoffs)",
-       x = 'NFL Game Weeks -->', y = 'Cumulative QB EPA') +
-  nflfastr_source +
+       x = 'NFL Game Weeks -->', y = 'Cumulative QB EPA',
+       caption = nflfastr_source
+  ) +
   theme_bw() +
   theme(axis.text.x = element_blank(),
         axis.ticks.x = element_blank())
