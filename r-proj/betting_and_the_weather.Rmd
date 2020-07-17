@@ -1,0 +1,289 @@
+---
+title: "Betting and the Weather"
+author: "Arthur Gymer"
+date: "17/07/2020"
+output:
+  html_document:
+    code_folding: show
+---
+```{r, "knitr-opts", include=F}
+knitr::opts_knit$set(root.dir = "../")
+```
+
+```{r, "setup", include=FALSE}
+library(data.table)
+library(glue)
+library(ggplot2)
+source('r-exts/nfl_themes.R')
+source('r-exts/nflfastr-helpers.R')
+
+getmode <- function(v) {
+  uniqv <- unique(v)
+  uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+```
+Last updated: `r Sys.time()`
+
+## Gathering the data
+
+I have previously merged weather data from ([\@DataWithBliss](https://twitter.com/DataWithBliss)) and Michael Lopez ([\@StatsbyLopez](https://twitter.com/StatsbyLopez)) with `nflfastR` play-by-play data and you can read more about that [here](wet_and_wild.html). I took much of the code from that work and turned it into a series of functions to allow me to easily get merged weather and play-by-play data. Once again I am only working with data from 2011 onwards because this is the earliest that real timestamps are availble for play-by-play data. Betting data came from Lee Sharpe's ([\@LeeSharpeNFL](https://twitter.com/LeeSharpeNFL)) `games.csv`.
+
+
+```{r, "fetch-data", cache=T}
+pbp <- get_pbp_from_db(2011)
+
+add_playtimes(pbp)
+add_realtime_dt(pbp)
+weatherdat <- clean_weatherdata()
+pbp <- combine_weatherdat(pbp, weatherdat)
+
+# Exclude any games where there is missing precipitation data
+pbp <- pbp[pbp[,.(missing=any(is.na(Precipitation))), by=new_game_id][missing==F], on='new_game_id']
+
+# Fetch Lee's games.csv
+gms <- fread('http://www.habitatring.com/games.csv')
+```
+
+I then decided to bin the weather data. I used cutoffs for windspeed which reflect the beaufort scale. For precipitation I used the same bins used by Tom in his weather data set, which appear to be official ranges according to [Wikipedia](https://en.wikipedia.org/wiki/Rain#Intensity). For temperature I chose totally arbitrary bandings - I think temperature is much more relative than precipitation and windspeed; what's "hot" in Minnesota probably isn't registering so much in Arizona.
+
+```{r, "bin-data"}
+beaufort_bins <- c(0, 1.5, 3.5, 7.5, 12.5, 18.5, 24.5, 31.5, 38.5, 46.5)
+beaufort_labs <- c(
+  'Calm', 'Light Air', 'Light Breeze', 'Gentle Breeze', 'Moderate Breeze', 
+  'Fresh Breeze', 'Strong Breeze', 'Near Gale', 'Gale'
+)
+precip_bins <- c(-Inf, 0, 0.098, 0.3, 2)
+precip_labs <- c('None', 'Light', 'Moderate', 'Heavy')
+temp_bins <- c(-Inf, 32, 50, 60, 70, 85, 95, Inf)
+temp_labs <- c('Freezing', 'Cold', 'Cool', 'Mild', 'Warm', 'Very Warm', 'Hot')
+# Bin the windspeeds and temps and also simplify the precipitation bins
+pbp[, beaufort_scale_labs:=cut(WindSpeed, beaufort_bins, labels=beaufort_labs, include.lowest=T, ordered_result=T)]
+pbp[, beaufort:=cut(WindSpeed, beaufort_bins, include.lowest=T, ordered_result=T)]
+pbp[, precip_scale_labs:=cut(Precipitation, precip_bins, labels=precip_labs, include.lowest = T, ordered_result = T)]
+pbp[, precip_scale:=cut(Precipitation, precip_bins, include.lowest = T, ordered_result = T)]
+pbp[, temp_scale_labs:=cut(Temperature, temp_bins, labels=temp_labs, include.lowest=T, ordered_result=T)]
+pbp[, temp_scale:=cut(Temperature, temp_bins, include.lowest=T, ordered_result=T)]
+```
+
+I then used the modal weather conditions from the play-by-play to determine a single banding for each measure per game. This is fairly crude and considering I use this method I could perhaps have considered including games that had missing weather data for less than half of plays.
+
+```{r, "pbp-to-games"}
+weather_gms <- pbp[,
+                 .(wind_labs=getmode(beaufort_scale_labs),
+                   wind=getmode(beaufort), 
+                   temp_labs=getmode(temp_scale_labs),
+                   temp=getmode(temp_scale),
+                   rain_labs=getmode(precip_scale_labs),
+                   rain=getmode(precip_scale),
+                   outdoors=roof[1] %in% c('outdoors', 'open')
+                  ),
+                by=new_game_id]
+
+weather_gms[,outdoors_labs := ifelse(outdoors==T, 'Outdoor/Open Roof', 'Dome/Closed Roof')]
+```
+
+Next I merged in the betting data from Lee Sharpe's `games.csv`. I also calculated the profit if you bet the over/under with 1 unit. 
+
+```{r "add-betting-data"}
+gms[,c('wind', 'temp'):=NULL]
+weather_gms <- gms[weather_gms, on=.(game_id=new_game_id)]
+
+weather_gms[, total_diff := total-total_line]
+weather_gms[, total_result := ifelse(total_diff<0, 'under', ifelse(total_diff>0, 'over', 'push'))]
+weather_gms[, total_result := factor(total_result, levels=c('over', 'under', 'push'))]
+
+bet_returns <- function(odds, stake, win){
+  if(!win){
+    return(-stake)
+  }
+  if(odds > 0){
+    returns <- (odds * (stake/100))
+  }
+  else if(odds < 0){
+    returns <- ((100/odds) * stake * -1)
+  }
+  else {returns <- NA}
+  return(returns)
+}
+
+weather_gms[, under_profits := mapply(bet_returns, under_odds, 1, (total_result=='under'))]
+weather_gms[total_result == 'push', under_profits := 0]
+weather_gms[!is.na(over_odds), over_profits := mapply(bet_returns, over_odds, 1, (total_result=='over'))]
+weather_gms[total_result == 'push', over_profits := 0]
+```
+
+
+```{r, "betting-helpers-ggplot", echo=F}
+betting_result_fill <- scale_fill_manual(
+  values = c('over'=THEME_COLS[['Blue']], 'under'=THEME_COLS[['Red']], 'push'=THEME_COLS[['MidGrey']]),
+  labels = c('over'='Over', 'under'='Under', 'push'='Push')
+)
+
+betting_x_scale <- scale_x_discrete(
+  labels = c('over'='Over', 'under'='Under', 'push'='Push')
+)
+
+precip_labeller <- function(x){ glue('Precipitation/mm\n{x}') }
+wind_labeller <- function(x){ glue('Wind/mph\n{x}') }
+temp_labeller <- function(x){ glue('Temp/ºF\n{x}') }
+```
+
+
+## The Results
+
+My aim was to look at if knowing the weather could give you an advantage when betting the under/over. 
+First let's look at a sort of "control". Is there any difference between games played indoors and those played outdoors.
+
+```{r, "indoor-outdoor", echo=F}
+io_grp_sizes <- weather_gms[,.(label=glue_data(.SD, 'N = {.N}')), by=outdoors_labs]
+indoor_outdoor_plt <- ggplot(
+  weather_gms, aes(x=total_result)
+  ) + 
+  geom_bar(aes(fill=total_result)) +
+  geom_text(data=io_grp_sizes, aes(x='push', y=weather_gms[,.N,by='outdoors,total_result'][,max(N)], label=label)) +
+  labs(
+    title = 'Over/Under Results by Stadium Type',
+    subtitle = '2108 Games since 2011 with full PBP weather available',
+    x = '', y = 'Games', caption = glue('{nflfastr_source}\n Weather Data: @DataWithBliss | Betting Data: @LeeSharpeNFL')
+  ) +
+  theme_nfl() + 
+  theme(panel.grid.major.x = element_blank()) + 
+  facet_grid(.~outdoors_labs) + 
+  betting_x_scale + 
+  betting_result_fill +
+  guides(fill=F)
+suppressWarnings(indoor_outdoor_plt)
+```
+
+So whilst the indoor games appear to be an almost perfect 50/50 split of under/over there does appear to be a very small bias towards hitting the under in outdoor games. Can we explain this by the weather?
+
+```{r, "temp-plot", echo=F}
+temp_grp_sizes <- weather_gms[outdoors==T,.(label=glue_data(.SD, 'N = {.N}')), by=temp]
+temp_plt <- ggplot(
+    weather_gms[outdoors==T], aes(x=total_result)
+  ) + 
+  geom_bar(aes(fill=total_result)) + 
+  geom_text(data=temp_grp_sizes, aes(x='under', y=weather_gms[outdoors==T,.N,by='temp,total_result'][,max(N)], label=label)) +
+  labs(
+    title = 'Over/Under Results by Temperature',
+    subtitle = '1556 Outdoor Games since 2011 with full PBP weather available',
+    x = '', y = 'Games', caption = glue('{nflfastr_source}\n Weather Data: @DataWithBliss | Betting Data: @LeeSharpeNFL')
+  ) +
+  facet_grid(.~temp, labeller = labeller(temp = temp_labeller)) + 
+  betting_result_fill + 
+  betting_x_scale +
+  theme_nfl() +
+  x_axis_angled() +
+  guides(fill=F)
+suppressWarnings(temp_plt)
+```
+
+Ok, so it looks like there might be a bit of an advantage on the unders when it's cold or freezing. 
+
+
+```{r, "precip-plot", echo=F}
+precip_grp_sizes <- weather_gms[outdoors==T,.(label=glue_data(.SD, 'N = {.N}')), by=rain]
+precip_plt <- ggplot(
+    weather_gms[outdoors==T], aes(x=total_result)
+  ) + 
+  geom_bar(aes(fill=total_result)) + 
+  geom_text(data=precip_grp_sizes, aes(x='push', y=weather_gms[outdoors==T,.N,by='rain,total_result'][,max(N)], label=label)) +
+  labs(
+    title = 'Over/Under Results by Precipitation',
+    subtitle = '1556 Outdoor Games since 2011 with full PBP weather available',
+    x = '', y = 'Games', caption = glue('{nflfastr_source}\n Weather Data: @DataWithBliss | Betting Data: @LeeSharpeNFL')
+  ) +
+  facet_grid(.~rain, labeller = labeller(rain = precip_labeller)) + 
+  betting_result_fill + 
+  betting_x_scale +
+  theme_nfl() +
+  x_axis_angled() +
+  guides(fill=F)
+suppressWarnings(precip_plt)
+```
+
+It turns out there really aren't that many games that are played in prolonged rainfall and even with the small sample size there is no indication that knowing it's going to be wet can help you pick the under/over.
+
+
+```{r, "wind-plot", echo=F}
+wind_grp_sizes <- weather_gms[outdoors==T,.(label=glue_data(.SD, 'N = {.N}')), by=wind]
+wind_plt <- ggplot(
+    weather_gms[outdoors==T], aes(x=total_result)
+  ) + 
+  geom_bar(aes(fill=total_result)) + 
+  geom_text(data=wind_grp_sizes, aes(x='under', y=weather_gms[outdoors==T,.N,by='wind,total_result'][,max(N)], label=label)) +
+  labs(
+    title = 'Over/Under Results by Windspeed',
+    subtitle = '1556 Outdoor Games since 2011 with full PBP weather available',
+    x = '', y = 'Games', caption = glue('{nflfastr_source}\n Weather Data: @DataWithBliss | Betting Data: @LeeSharpeNFL')
+  ) +
+  facet_grid(.~wind, labeller = labeller(wind = wind_labeller)) + 
+  betting_result_fill + 
+  betting_x_scale +
+  theme_nfl() +
+  x_axis_angled() +
+  guides(fill=F)
+suppressWarnings(wind_plt)
+```
+
+It does look like the windier it gets the more likely the under becomes to hit, but like temperature it's not exactly a resounding difference. 
+
+So it looks like there might be *some* conditions in which the under hits more often than not. Could we combine the conditions to find another subset which is even more skewed? If we try plotting faceted by all three variables at once you find that it becomes too small and impossible to actually discern anything on the plot (trust me I tried) so instead I do 1 plot for games with precipitation and 1 for games without precipitation, faceted by windspeed and temperature. There is no point in breaking down the levels of precipitation further as there are just 9 games with "moderate" and 2 games with "heavy" precipitation in this dataset.
+
+#### No Precipitation
+```{r, "no-rain-plt", echo=F}
+no_rain_grp_sizes <- weather_gms[rain=="[-Inf,0]" & outdoors==T,.(label=glue_data(.SD, 'N = {.N}')), by='temp,wind']
+no_rain_max_grp_y <- weather_gms[rain=="[-Inf,0]" & outdoors==T,.N, by='temp,wind,total_result'][,max(N)]
+no_rain_plt <- ggplot(
+    weather_gms[rain=="[-Inf,0]" & outdoors==T], aes(x=total_result)
+  ) + 
+  geom_bar(aes(fill=total_result)) + 
+  geom_text(data=no_rain_grp_sizes, aes(x='push', y=no_rain_max_grp_y-10, label=label), size=2) +
+  labs(
+    title = 'Over/Under Results by Windspeed + Temperature | No Precipitation',
+    subtitle = glue('{weather_gms[rain=="[-Inf,0]",.N]} Outdoor Games since 2011 with full PBP weather available'),
+    x = '', y = 'Games', caption = glue('{nflfastr_source}\n Weather Data: @DataWithBliss | Betting Data: @LeeSharpeNFL')
+  ) +
+  facet_grid(temp~wind, labeller = labeller(temp=temp_labeller, wind=wind_labeller)) + 
+  betting_result_fill + 
+  betting_x_scale +
+  theme_nfl(8) +
+  x_axis_angled() +
+  guides(fill=F)
+suppressWarnings(no_rain_plt)
+```
+
+There are some signs that cold and moderately windy conditions could be favourable for the unders, but it's not a strong trend by any means.
+
+#### Precipitaion
+```{r, "light-rain-plt", echo=F}
+light_rain_grp_sizes <- weather_gms[rain!="[-Inf,0]" & outdoors==T,.(label=glue_data(.SD, 'N = {.N}')), by='temp,wind']
+light_rain_max_grp_y <- weather_gms[rain!="[-Inf,0]" & outdoors==T,.N, by='temp,wind,total_result'][,max(N)]
+light_rain_plt <- ggplot(
+    weather_gms[rain!="[-Inf,0]" & outdoors==T], aes(x=total_result)
+  ) + 
+  geom_bar(aes(fill=total_result)) + 
+  geom_text(data=light_rain_grp_sizes, aes(x='push', y=light_rain_max_grp_y-1, label=label), size=2) +
+  labs(
+    title = 'Over/Under Results by Windspeed + Temperature | Precipitation',
+    subtitle = glue('{weather_gms[rain!="[-Inf,0]",.N]} Outdoor Games since 2011 with full PBP weather available'),
+    x = '', y = 'Games', caption = glue('{nflfastr_source}\n Weather Data: @DataWithBliss | Betting Data: @LeeSharpeNFL')
+  ) +
+  facet_grid(temp~wind, labeller = labeller(temp=temp_labeller, wind=wind_labeller)) + 
+  betting_result_fill + 
+  betting_x_scale +
+  theme_nfl(8) +
+  x_axis_angled() +
+  guides(fill=F)
+suppressWarnings(light_rain_plt)
+```
+
+When rain is added to the mix it looks like wind and cold combine to really boost the unders but closer inspection shows that the sample sizes are pretty small - maybe 30 games in total - which makes it hard to draw a real conclusion. 
+
+## Conclusion
+
+So can knowing the weather conditions help you bet the over/under more successfully? If you can predict cold, wet, and windy conditions then perhaps, but I wouldn't be rushing out to stake my savings on it. The other aspect of this which isn't captured here is the forecast; it's possible that the increase in the times the under hit is down to it being hard to accurately forecast a combination of conditions and so the line is harder to set - of course that also means it's harder to bet!
+
+There is more that could be looked at with regards to weather and the total line such as whether both teams are "outdoor" teams, maybe dome teams competing in such conditions increases the chance of hitting the under, but I leave that for another day. 
+
+

@@ -1,9 +1,11 @@
 library(data.table)
 library(glue)
 
-get_pbp_from_db <- function(){
-  connection <- DBI::dbConnect(RSQLite::SQLite(), "./db/pbp_db")
-  pbp <- as.data.table(DBI::dbReadTable(connection, 'nflfastR_pbp'))
+get_pbp_from_db <- function(start_yr=1999, end_year=2020, dbpath='./db/pbp_db'){
+  connection <- DBI::dbConnect(RSQLite::SQLite(), dbpath)
+  res <- DBI::dbSendQuery(connection, glue_sql('SELECT * FROM nflfastR_pbp WHERE season BETWEEN {start_yr} AND {end_year}'))
+  pbp <- as.data.table(DBI::dbFetch(res))
+  DBI::dbClearResult(res)
   DBI::dbDisconnect(connection)
   return(pbp)
 }

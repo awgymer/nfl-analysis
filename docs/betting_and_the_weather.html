@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Arthur Gymer" />
+
+
+<title>Betting and the Weather</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">NFL Analytics</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Betting and the Weather</h1>
+<h4 class="author">Arthur Gymer</h4>
+<h4 class="date">17/07/2020</h4>
+
+</div>
+
+
+<p>Last updated: 2020-07-17 19:23:49</p>
+<div id="gathering-the-data" class="section level2">
+<h2>Gathering the data</h2>
+<p>I have previously merged weather data from (<a href="https://twitter.com/DataWithBliss">@DataWithBliss</a>) and Michael Lopez (<a href="https://twitter.com/StatsbyLopez">@StatsbyLopez</a>) with <code>nflfastR</code> play-by-play data and you can read more about that <a href="wet_and_wild.html">here</a>. I took much of the code from that work and turned it into a series of functions to allow me to easily get merged weather and play-by-play data. Once again I am only working with data from 2011 onwards because this is the earliest that real timestamps are availble for play-by-play data. Betting data came from Lee Sharpe’s (<a href="https://twitter.com/LeeSharpeNFL">@LeeSharpeNFL</a>) <code>games.csv</code>.</p>
+<pre class="r"><code>pbp &lt;- get_pbp_from_db(2011)
+
+add_playtimes(pbp)
+add_realtime_dt(pbp)
+weatherdat &lt;- clean_weatherdata()
+pbp &lt;- combine_weatherdat(pbp, weatherdat)
+
+# Exclude any games where there is missing precipitation data
+pbp &lt;- pbp[pbp[,.(missing=any(is.na(Precipitation))), by=new_game_id][missing==F], on=&#39;new_game_id&#39;]
+
+# Fetch Lee&#39;s games.csv
+gms &lt;- fread(&#39;http://www.habitatring.com/games.csv&#39;)</code></pre>
+<p>I then decided to bin the weather data. I used cutoffs for windspeed which reflect the beaufort scale. For precipitation I used the same bins used by Tom in his weather data set, which appear to be official ranges according to <a href="https://en.wikipedia.org/wiki/Rain#Intensity">Wikipedia</a>. For temperature I chose totally arbitrary bandings - I think temperature is much more relative than precipitation and windspeed; what’s “hot” in Minnesota probably isn’t registering so much in Arizona.</p>
+<pre class="r"><code>beaufort_bins &lt;- c(0, 1.5, 3.5, 7.5, 12.5, 18.5, 24.5, 31.5, 38.5, 46.5)
+beaufort_labs &lt;- c(
+  &#39;Calm&#39;, &#39;Light Air&#39;, &#39;Light Breeze&#39;, &#39;Gentle Breeze&#39;, &#39;Moderate Breeze&#39;, 
+  &#39;Fresh Breeze&#39;, &#39;Strong Breeze&#39;, &#39;Near Gale&#39;, &#39;Gale&#39;
+)
+precip_bins &lt;- c(-Inf, 0, 0.098, 0.3, 2)
+precip_labs &lt;- c(&#39;None&#39;, &#39;Light&#39;, &#39;Moderate&#39;, &#39;Heavy&#39;)
+temp_bins &lt;- c(-Inf, 32, 50, 60, 70, 85, 95, Inf)
+temp_labs &lt;- c(&#39;Freezing&#39;, &#39;Cold&#39;, &#39;Cool&#39;, &#39;Mild&#39;, &#39;Warm&#39;, &#39;Very Warm&#39;, &#39;Hot&#39;)
+# Bin the windspeeds and temps and also simplify the precipitation bins
+pbp[, beaufort_scale_labs:=cut(WindSpeed, beaufort_bins, labels=beaufort_labs, include.lowest=T, ordered_result=T)]
+pbp[, beaufort:=cut(WindSpeed, beaufort_bins, include.lowest=T, ordered_result=T)]
+pbp[, precip_scale_labs:=cut(Precipitation, precip_bins, labels=precip_labs, include.lowest = T, ordered_result = T)]
+pbp[, precip_scale:=cut(Precipitation, precip_bins, include.lowest = T, ordered_result = T)]
+pbp[, temp_scale_labs:=cut(Temperature, temp_bins, labels=temp_labs, include.lowest=T, ordered_result=T)]
+pbp[, temp_scale:=cut(Temperature, temp_bins, include.lowest=T, ordered_result=T)]</code></pre>
+<p>I then used the modal weather conditions from the play-by-play to determine a single banding for each measure per game. This is fairly crude and considering I use this method I could perhaps have considered including games that had missing weather data for less than half of plays.</p>
+<pre class="r"><code>weather_gms &lt;- pbp[,
+                 .(wind_labs=getmode(beaufort_scale_labs),
+                   wind=getmode(beaufort), 
+                   temp_labs=getmode(temp_scale_labs),
+                   temp=getmode(temp_scale),
+                   rain_labs=getmode(precip_scale_labs),
+                   rain=getmode(precip_scale),
+                   outdoors=roof[1] %in% c(&#39;outdoors&#39;, &#39;open&#39;)
+                  ),
+                by=new_game_id]
+
+weather_gms[,outdoors_labs := ifelse(outdoors==T, &#39;Outdoor/Open Roof&#39;, &#39;Dome/Closed Roof&#39;)]</code></pre>
+<p>Next I merged in the betting data from Lee Sharpe’s <code>games.csv</code>. I also calculated the profit if you bet the over/under with 1 unit.</p>
+<pre class="r"><code>gms[,c(&#39;wind&#39;, &#39;temp&#39;):=NULL]
+weather_gms &lt;- gms[weather_gms, on=.(game_id=new_game_id)]
+
+weather_gms[, total_diff := total-total_line]
+weather_gms[, total_result := ifelse(total_diff&lt;0, &#39;under&#39;, ifelse(total_diff&gt;0, &#39;over&#39;, &#39;push&#39;))]
+weather_gms[, total_result := factor(total_result, levels=c(&#39;over&#39;, &#39;under&#39;, &#39;push&#39;))]
+
+bet_returns &lt;- function(odds, stake, win){
+  if(!win){
+    return(-stake)
+  }
+  if(odds &gt; 0){
+    returns &lt;- (odds * (stake/100))
+  }
+  else if(odds &lt; 0){
+    returns &lt;- ((100/odds) * stake * -1)
+  }
+  else {returns &lt;- NA}
+  return(returns)
+}
+
+weather_gms[, under_profits := mapply(bet_returns, under_odds, 1, (total_result==&#39;under&#39;))]
+weather_gms[total_result == &#39;push&#39;, under_profits := 0]
+weather_gms[!is.na(over_odds), over_profits := mapply(bet_returns, over_odds, 1, (total_result==&#39;over&#39;))]
+weather_gms[total_result == &#39;push&#39;, over_profits := 0]</code></pre>
+</div>
+<div id="the-results" class="section level2">
+<h2>The Results</h2>
+<p>My aim was to look at if knowing the weather could give you an advantage when betting the under/over. First let’s look at a sort of “control”. Is there any difference between games played indoors and those played outdoors.</p>
+<p><img src="betting_and_the_weather_files/figure-html/indoor-outdoor-1.png" width="672" /></p>
+<p>So whilst the indoor games appear to be an almost perfect 50/50 split of under/over there does appear to be a very small bias towards hitting the under in outdoor games. Can we explain this by the weather?</p>
+<p><img src="betting_and_the_weather_files/figure-html/temp-plot-1.png" width="672" /></p>
+<p>Ok, so it looks like there might be a bit of an advantage on the unders when it’s cold or freezing.</p>
+<p><img src="betting_and_the_weather_files/figure-html/precip-plot-1.png" width="672" /></p>
+<p>It turns out there really aren’t that many games that are played in prolonged rainfall and even with the small sample size there is no indication that knowing it’s going to be wet can help you pick the under/over.</p>
+<p><img src="betting_and_the_weather_files/figure-html/wind-plot-1.png" width="672" /></p>
+<p>It does look like the windier it gets the more likely the under becomes to hit, but like temperature it’s not exactly a resounding difference.</p>
+<p>So it looks like there might be <em>some</em> conditions in which the under hits more often than not. Could we combine the conditions to find another subset which is even more skewed? If we try plotting faceted by all three variables at once you find that it becomes too small and impossible to actually discern anything on the plot (trust me I tried) so instead I do 1 plot for games with precipitation and 1 for games without precipitation, faceted by windspeed and temperature. There is no point in breaking down the levels of precipitation further as there are just 9 games with “moderate” and 2 games with “heavy” precipitation in this dataset.</p>
+<div id="no-precipitation" class="section level4">
+<h4>No Precipitation</h4>
+<p><img src="betting_and_the_weather_files/figure-html/no-rain-plt-1.png" width="672" /></p>
+<p>There are some signs that cold and moderately windy conditions could be favourable for the unders, but it’s not a strong trend by any means.</p>
+</div>
+<div id="precipitaion" class="section level4">
+<h4>Precipitaion</h4>
+<p><img src="betting_and_the_weather_files/figure-html/light-rain-plt-1.png" width="672" /></p>
+<p>When rain is added to the mix it looks like wind and cold combine to really boost the unders but closer inspection shows that the sample sizes are pretty small - maybe 30 games in total - which makes it hard to draw a real conclusion.</p>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>So can knowing the weather conditions help you bet the over/under more successfully? If you can predict cold, wet, and windy conditions then perhaps, but I wouldn’t be rushing out to stake my savings on it. The other aspect of this which isn’t captured here is the forecast; it’s possible that the increase in the times the under hit is down to it being hard to accurately forecast a combination of conditions and so the line is harder to set - of course that also means it’s harder to bet!</p>
+<p>There is more that could be looked at with regards to weather and the total line such as whether both teams are “outdoor” teams, maybe dome teams competing in such conditions increases the chance of hitting the under, but I leave that for another day.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("show" === "show");
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
